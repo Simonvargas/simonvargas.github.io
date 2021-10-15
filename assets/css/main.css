@@ -3932,3 +3932,22 @@ a {
 span {
 	color: black;
 }
+
+#technologies ul.badges a img {
+	height: 80px;
+	width: 80px;
+	margin: 5px;
+}
+
+#technologies .technologies_container {
+	display: flex;
+	align-items: center;
+}
+
+img.photo-technologies {
+	width: 20rem;
+	height: 28rem;
+	margin-left: 65px;
+	position: relative;
+	top: 20px;
+}
