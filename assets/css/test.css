@@ -3548,8 +3548,11 @@ input, select, textarea {
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
 		/* background: #312450; */
-		background-color: #abe9cd;
-background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+		/* background-color: #abe9cd;
+background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%); */
+/* background: linear-gradient(60deg, #abecd6 0%, #fbed96 100%); */
+ background: linear-gradient(109.6deg, rgb(148, 233, 194) 11.2%, rgb(224, 235, 186) 91.1%);
+/* background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);  */
 
 		cursor: default;
 		height: 100vh;
