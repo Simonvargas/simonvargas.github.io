@@ -146,20 +146,19 @@ input, select, textarea {
 
 		}
 
-	a {
-		-moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
-		color: inherit;
-		text-decoration: none;
+	.github {
+		color: rgb(11, 80, 148)
 	}
 
-		a:hover {
-			border-bottom-color: transparent;
-			color: #92dfab;
-		}
+	.github:hover {
+		border-bottom-color: transparent;
+		color: #92dfab;
+	}
+
+	/* a:hover {
+		border-bottom-color: transparent;
+		color: #92dfab;
+	} */
 
 	strong, b {
 		color: #ffffff;
@@ -3843,19 +3842,12 @@ background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%); */
 		.profile-image {
 			float: left;
     width: 300px;
-    height: 300px;
+    height: 320px;
     /* background-image: url(https://avatars.githubusercontent.com/u/22425467?v=4); */
     background-size: cover;
     background-position: center;
     border-radius: 50%;
 		}
-
-
-	.separate2 {
-		/* margin-right: 100x; */
-		float: middle;
-		
-	}
        
 		
 
