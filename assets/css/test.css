@@ -154,7 +154,13 @@ input, select, textarea {
 		border-bottom-color: transparent;
 		color: #92dfab;
 	}
-
+	a {
+		color:black;
+	}
+.icon:hover {
+	border-bottom-color: transparent;
+		color: #92dfab;	
+}
 	/* a:hover {
 		border-bottom-color: transparent;
 		color: #92dfab;
