@@ -3843,7 +3843,7 @@ background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%); */
 		.profile-image {
 			float: left;
     width: 300px;
-    height: 320px;
+    height: 300px;
     /* background-image: url(https://avatars.githubusercontent.com/u/22425467?v=4); */
     background-size: cover;
     background-position: center;
