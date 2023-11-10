@@ -145,7 +145,9 @@ input, select, textarea {
 			}
 
 		}
-
+a {
+	color: black;
+}
 	.github {
 		color: rgb(11, 80, 148)
 	}
