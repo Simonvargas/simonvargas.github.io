@@ -2001,7 +2001,7 @@ a {
 
 		.features section {
 			width: 100%;
-			padding: 3em 2em 1em 8em ;
+			/* padding: 3em 2em 1em 8em ; */
 			border-top: solid 1px rgba(255, 255, 255, 0.15);
 			position: relative;
 		}
