@@ -97,9 +97,7 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
-		/* background: #312450; */
-	}
+	
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -3235,10 +3233,6 @@ input, select, textarea {
 
 			}
 
-		.wrapper.alt {
-			
-			/* background-color: #261c3e; */
-		}
 
 		.wrapper.style1 {
 			/* background-color: #5e42a6; */
