@@ -115,4 +115,16 @@
   }
 }
 
+@media only screen 
+  and (min-device-width: 390px) 
+  and (max-device-width: 896px) 
+  {
+    .slider img.slider__images-image
+    {
+      min-height: 550px;
+      min-width: 350px;
+      width: 100%;
+    }
+  }
+
 /*# sourceMappingURL=slider.css.map */
