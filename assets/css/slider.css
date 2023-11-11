@@ -118,6 +118,7 @@
 @media only screen 
   and (min-device-width: 390px) 
   and (max-device-width: 896px) 
+  and (-webkit-device-pixel-ratio: 3)
   {
     .slider img.slider__images-image
     {
@@ -125,6 +126,12 @@
       min-width: 350px;
       width: 100%;
     }
+    .slider__controls {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      user-select: none;
+      text-align: center;
+  }
   }
 
 /*# sourceMappingURL=slider.css.map */
