@@ -3863,6 +3863,7 @@ background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%); */
 			width: 20rem;
     		height: 28rem;
     		margin-left: 65px;
+			margin-top: 30px;
 		}
 
 		@media screen and (max-width: 480px) {
@@ -4105,7 +4106,24 @@ background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%); */
   img { 
 	width: 100%;
   }
- 
-
+  .h2 {
+	text-align: center;
+  }
+  
+ .badges {
+	width: 100%;
+	height: 150%;
+ }
+ .fade-up {
+	height: 10%;
+ }
+.hello2 {
+	height: 10px;;
 }
+#footer {
+	visibility:hidden;
+}
+}
+
+
 
