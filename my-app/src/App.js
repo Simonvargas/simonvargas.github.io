@@ -1,9 +1,11 @@
+import React, { useState, useEffect } from "react";
+import Headroom from 'react-headroom'
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Headroom><Header/></Headroom>
       <Introduction />
       <AboutMe />
       <Projects />
@@ -17,7 +19,7 @@ function App() {
 function Header() {
   return (
     <header>
-      <h1>Simon Vargas</h1>
+      <h1>My Portfolio</h1>
       <nav>
         <a href="#introduction">Introduction</a>
         <a href="#about-me">About Me</a>
@@ -112,16 +114,28 @@ function Contact() {
 
       <h3>Social</h3>
       <ul class="icons">
-									<li><a href="https://github.com/simonvargas" target="_blank" rel="noreferrer"
-											class="icon brands fa-github fa-2x"><span class="label">GitHub</span></a>
-									</li>
-									<li><a href="https://angel.co/u/simon-vargas" target="_blank" rel="noreferrer"
-											class="icon brands fa-angellist fa-2x"><span
-												class="label">AngelList</span></a></li>
-									<li><a href="https://www.linkedin.com/in/simonvargas01/" target="_blank"
-											rel="noreferrer" class="icon brands fa-linkedin-in fa-2x"><span
-												class="label">LinkedIn</span></a></li>
-								</ul>
+        <li>
+          <a
+            href="https://github.com/simonvargas"
+            target="_blank"
+            rel="noreferrer"
+            class="icon brands fa-github fa-2x"
+          >
+            <span class="label">GitHub</span>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.linkedin.com/in/simonvargas01/"
+            target="_blank"
+            rel="noreferrer"
+            class="icon brands fa-linkedin-in fa-2x"
+          >
+            <span class="label">LinkedIn</span>
+          </a>
+        </li>
+      </ul>
     </section>
   );
 }
