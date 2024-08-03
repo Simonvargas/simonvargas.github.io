@@ -1,38 +1,94 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav a {
   color: white;
+  margin: 0 1rem;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+nav a:hover {
+  text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+  padding: 2rem;
+  border-bottom: 1px solid #ddd;
 }
+
+footer {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+h1, h2 {
+  margin: 0 0 1rem 0;
+}
+
+
+/* Contact */
+
+ul.contact {
+  list-style: none;
+  padding: 0;
+}
+
+  ul.contact > li {
+    padding: 0;
+    margin: 1.5em 0 0 0;
+  }
+
+    ul.contact > li:first-child {
+      margin-top: 0;
+    }
+
+/* Icons */
+
+ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+
+  ul.icons li {
+    display: inline-block;
+    padding: 0 0.75em 0 0;
+  }
+
+    ul.icons li:last-child {
+      padding-right: 0;
+    }
+
+    ul.icons li > a, ul.icons li > span {
+      border: 0;
+    }
+
+      ul.icons li > a .label, ul.icons li > span .label {
+        display: none;
+      }
+      .icon:hover {
+        border-bottom-color: transparent;
+          color: #92dfab;	
+      }
