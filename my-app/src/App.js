@@ -1,4 +1,4 @@
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
@@ -33,7 +33,10 @@ function Introduction() {
   return (
     <section id="introduction">
       <h2>Introduction</h2>
-      <p>Welcome to my portfolio! Here you'll find information about me and my work.</p>
+      <p>
+        Welcome to my portfolio! Here you'll find information about me and my
+        work.
+      </p>
     </section>
   );
 }
@@ -42,17 +45,26 @@ function AboutMe() {
   return (
     <section id="about-me">
       <h2>About Me</h2>
-      <p>From a young age, computers have been an intrinsic part of my life. Technology has captivated
-							my imagination. Growing up, I found myself constantly tinkering with gadgets, exploring
-							computer programs, and embracing the endless possibilities that technology offered. It was
-							during this time that I discovered my deep-rooted passion for leveraging technology to help
-							others and make a positive impact.</p>
-						<p>Today, as a Solutions Engineer, I have the incredible opportunity to combine my love for
-							technology with my innate desire to assist and empower others. I thrive in this role, as it
-							allows me to utilize my technical expertise to develop innovative solutions that address
-							complex challenges and drive meaningful change for individuals and organizations.</p>
-						<p>I'm thrilled to have you here, and I can't wait to share my work with you. Let's embark on
-							this journey together!</p>
+      <p>
+        From a young age, computers have been an intrinsic part of my life.
+        Technology has captivated my imagination. Growing up, I found myself
+        constantly tinkering with gadgets, exploring computer programs, and
+        embracing the endless possibilities that technology offered. It was
+        during this time that I discovered my deep-rooted passion for leveraging
+        technology to help others and make a positive impact.
+      </p>
+      <p>
+        Today, as a Solutions Engineer, I have the incredible opportunity to
+        combine my love for technology with my innate desire to assist and
+        empower others. I thrive in this role, as it allows me to utilize my
+        technical expertise to develop innovative solutions that address complex
+        challenges and drive meaningful change for individuals and
+        organizations.
+      </p>
+      <p>
+        I'm thrilled to have you here, and I can't wait to share my work with
+        you. Let's embark on this journey together!
+      </p>
     </section>
   );
 }
@@ -82,28 +94,24 @@ function Hobbies() {
 function Contact() {
   return (
     <section id="contact">
-      <div class="inner">
-				<h2 class="h2-items">Get in touch</h2>
-				<p>Feel free to contact me if you have any questions about my experience or are looking to collaborate.
-				</p>
-				<div class="split style1">
-					<section>
-						<ul class="contact">
-							<li>
-								<h3>Email</h3>
-								<p>simonvargas01@gmail.com</p>
-							</li>
-							<li>
-								<h3>Phone</h3>
-								<span>786.985.5045</span>
-							</li>
-							<li>
-								<h3>Location</h3>
-								<p>New York, NY</p>
-							</li>
-							<li>
-								<h3>Social</h3>
-								<ul class="icons">
+      <h2>Get in touch</h2>
+
+      <p>
+        Feel free to contact me if you have any questions about my experience or
+        are looking to collaborate.
+      </p>
+
+      <h3>Email</h3>
+      <p>simonvargas01@gmail.com</p>
+
+      <h3>Phone</h3>
+      <span>786.985.5045</span>
+
+      <h3>Location</h3>
+      <p>New York, NY</p>
+
+      <h3>Social</h3>
+      <ul class="icons">
 									<li><a href="https://github.com/simonvargas" target="_blank" rel="noreferrer"
 											class="icon brands fa-github fa-2x"><span class="label">GitHub</span></a>
 									</li>
@@ -114,11 +122,6 @@ function Contact() {
 											rel="noreferrer" class="icon brands fa-linkedin-in fa-2x"><span
 												class="label">LinkedIn</span></a></li>
 								</ul>
-							</li>
-						</ul>
-					</section>
-				</div>
-			</div>
     </section>
   );
 }
@@ -128,11 +131,12 @@ function Footer() {
     <footer>
       <p>&copy; 2024 My Portfolio. All rights reserved.</p>
       <p>
-        Follow me on <a href="https://twitter.com/">Twitter</a>, <a href="https://linkedin.com/">LinkedIn</a>, and <a href="https://github.com/">GitHub</a>.
+        Follow me on <a href="https://twitter.com/">Twitter</a>,{" "}
+        <a href="https://linkedin.com/">LinkedIn</a>, and{" "}
+        <a href="https://github.com/">GitHub</a>.
       </p>
     </footer>
   );
 }
-
 
 export default App;
