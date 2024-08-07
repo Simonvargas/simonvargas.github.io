@@ -3,9 +3,10 @@ import "./Splash.css";
 import { ScrollContext } from "../../Context";
 
 function Splash() {
-  const { homeRef, aboutMeRef } = useContext(ScrollContext);
+  const { homeRef, aboutMeRef, setActiveLink } = useContext(ScrollContext);
 
   const scrollToAboutMe = () => {
+    setActiveLink("aboutMe");
     if (aboutMeRef && aboutMeRef.current) {
       aboutMeRef.current.scrollIntoView({ behavior: "smooth" });
     }
@@ -29,9 +30,7 @@ function Splash() {
         </a>
         </div>
       </div>
-      {/* <div className="split-section__image">
-        <img src="images/people-connected.png" alt="Description" />
-      </div> */}
+     
     </div>
   );
 }

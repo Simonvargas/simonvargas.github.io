@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import "./Contact.css";
+import styles from './Contact.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ScrollContext } from  "../../Context";
 
@@ -8,7 +8,7 @@ function Contact() {
   const { contactRef} = useContext(ScrollContext);
 
   return (
-    <section ref={contactRef} class="contact" id="contact">
+    <section ref={contactRef} class={styles.contact} id="contact">
       <h1>Get in touch</h1>
 
       <p>
@@ -26,14 +26,14 @@ function Contact() {
       <p>New York, NY</p>
 
       <h3>Social</h3>
-      <div class="iconContainer">
+      <div class={styles.iconContainer}>
         <a
           href="https://github.com/simonvargas"
           target="_blank"
           rel="noreferrer"
         >
           <svg
-            class="icon"
+            class={styles.icon}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 496 512"
           >
@@ -43,7 +43,7 @@ function Contact() {
 
         <a href="https://www.linkedin.com/in/simonvargas01/" target="_blank"rel="noreferrer">
           <svg
-            class="icon"
+            class={styles.icon}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >

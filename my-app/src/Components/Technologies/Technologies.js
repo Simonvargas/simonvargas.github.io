@@ -18,7 +18,7 @@ function Technologies() {
          </div>
 
             <div class="inner">
-              <h2 class="h2">Technologies</h2>
+              <h1 class="h2">Technologies</h1>
               <ul class="badges">
                 <a
                   href="https://www.w3schools.com/css/"

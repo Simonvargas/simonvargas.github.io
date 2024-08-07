@@ -51,11 +51,12 @@
     display: flex;
     gap: 25px; 
     margin-top:1.5rem;
+    
   }
 
   .btn {
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
     /* color: #a5a5a5; */
     color: black;
@@ -68,6 +69,7 @@
     letter-spacing: 0.20em;
     line-height: 2.75em;
     padding: 0 3.75em;
+    background-color: rgb(255, 255, 255, 0.4)
   }
   
   .btn:hover {

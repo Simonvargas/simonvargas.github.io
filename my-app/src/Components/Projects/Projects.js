@@ -64,15 +64,10 @@ const Projects = () => {
         </button>
       </div>
       <TransitionGroup className="projectDetails">
-        <CSSTransition
-          key={selectedProject}
-          timeout={500}
-          classNames="fade"
-        >
-          <div>
+       
+          <div className="pojectcontainer1">
             {renderProjectDetails()}
           </div>
-        </CSSTransition>
       </TransitionGroup>
 
     </section>

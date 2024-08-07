@@ -1,15 +1,10 @@
-/* .aboutMe {
-    padding: 2rem;
-    border-bottom: 1px solid #bab4b4;
-    background-color: gray;
-  } */
-  
-/* General section styles */
+
 .aboutMe {
-  background-color: #393e46; /* Light background color for contrast */
+  background-color:#222831; /* Light background color for contrast */
   color: white; /* Dark text color for readability */
-  padding: 4rem 2rem; 
+  padding: 5rem 2rem; 
   width: 100%; /* Full width of its container */
+  height: 100vh;
   box-sizing: border-box; /* Ensure padding is included in the width */
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -20,29 +15,22 @@
   font-family: 'Georgia', serif; /* Elegant serif font */
   font-size: 2.5rem; /* Large heading size */
   color: white; /* Darker color for the heading */
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   text-align: center; /* Center the heading */
 }
 
 /* Paragraph styles */
 .aboutMe p {
   font-family: 'Arial', sans-serif; /* Clean sans-serif font */
-  font-size: 1.1rem; /* Slightly larger font size for readability */
+  font-size: 1.5rem; /* Slightly larger font size for readability */
   line-height: 1.6; /* Increased line height for better readability */
-  margin-bottom: 1.5rem; /* Space between paragraphs */
+  margin-bottom: 3rem; /* Space between paragraphs */
 }
 
-/* Optional: Add a subtle transition effect */
 .aboutMe h2, .aboutMe p {
   transition: color 0.3s ease;
 }
 
-/* .aboutMe:hover h2 {
-  color: #92dfab; 
-}
 
-.aboutMe:hover p {
-  color: #555; 
-} */
 
   
