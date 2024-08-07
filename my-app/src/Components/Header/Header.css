@@ -1,0 +1,36 @@
+nav {
+  background-color: rgba(255, 255, 255, 0);
+    color: white;
+    padding: 1.2rem;
+    text-align: center;
+    list-style: none;
+    position:fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+  left: 0; 
+  }
+  
+.links {
+    color: rgb(112, 112, 112, 1);
+    margin: 0 1rem;
+    text-decoration: none;
+    -moz-transition: color 0.2s ease;
+    -webkit-transition: color 0.2s ease;
+    -ms-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+    border: 0;
+    font-weight: bold;
+    letter-spacing: 0.25em;
+    line-height: 1.75;
+    outline: 0;
+    padding: 1.35em 0;
+    position: relative;
+    text-transform: uppercase;
+  }
+  
+.links:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px; /* Adjusts the thickness of the underline */
+    text-underline-offset: 15px; 
+  }
