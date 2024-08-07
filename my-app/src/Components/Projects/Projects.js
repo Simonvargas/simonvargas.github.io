@@ -1,17 +1,38 @@
 import React, { useState, useEffect } from "react";
 import "./Projects.css"
 
-function Projects() {
-    return (
-      <section class='project' id="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li>Project 1: A cool web app</li>
-          <li>Project 2: Another cool project</li>
-          <li>Project 3: Yet another cool project</li>
-        </ul>
-      </section>
-    );
-  }
+const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
 
-  export default Projects
+  const handleProjectClick = (projectName) => {
+    setSelectedProject(projectName);
+  };
+
+  return (
+    <section className="project" id="projects">
+      <h2>Projects</h2>
+      <div className="projectContainer">
+        <button className="h2" onClick={() => handleProjectClick('HeirBnB')}>
+          HeirBnB
+        </button>
+        <button className="h2" onClick={() => handleProjectClick('Chimera')}>
+          Chimera
+        </button>
+        <button className="h2" onClick={() => handleProjectClick('Sneax')}>
+          Sneax
+        </button>
+        <button className="h2" onClick={() => handleProjectClick('FeelBrite')}>
+          FeelBrite
+        </button>
+      </div>
+      {selectedProject && (
+        <div className="projectDetails">
+          <h3>Selected Project: {selectedProject}</h3>
+          <p>Details about {selectedProject}...</p>
+        </div>
+      )}
+    </section>
+  );
+};
+
+export default Projects

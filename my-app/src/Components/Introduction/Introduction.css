@@ -6,8 +6,8 @@
   
 /* General section styles */
 .aboutMe {
-  background-color: #f4f4f9; /* Light background color for contrast */
-  color: #333; /* Dark text color for readability */
+  background-color: #393e46; /* Light background color for contrast */
+  color: white; /* Dark text color for readability */
   padding: 4rem 2rem; 
   width: 100%; /* Full width of its container */
   box-sizing: border-box; /* Ensure padding is included in the width */
@@ -19,7 +19,7 @@
 .aboutMe h2 {
   font-family: 'Georgia', serif; /* Elegant serif font */
   font-size: 2.5rem; /* Large heading size */
-  color: #1e1e1e; /* Darker color for the heading */
+  color: white; /* Darker color for the heading */
   margin-bottom: 2rem;
   text-align: center; /* Center the heading */
 }
@@ -37,12 +37,12 @@
   transition: color 0.3s ease;
 }
 
-.aboutMe:hover h2 {
-  color: #92dfab; /* Change heading color on hover */
+/* .aboutMe:hover h2 {
+  color: #92dfab; 
 }
 
 .aboutMe:hover p {
-  color: #555; /* Change paragraph color on hover */
-}
+  color: #555; 
+} */
 
   
