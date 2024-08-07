@@ -1,9 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./Splash.css"
+import { ScrollContext } from  "../../Context";
+
 
 function Splash() {
+  const { homeRef} = useContext(ScrollContext);
+
     return (
-      <div id="home" className="split-section">
+      <div ref={homeRef} id="home" className="split-section">
         <div className="split-section__text">
           <h1>Simon Vargas</h1>
           <p>

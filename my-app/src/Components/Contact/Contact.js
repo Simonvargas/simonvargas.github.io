@@ -1,10 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./Contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ScrollContext } from  "../../Context";
+
 
 function Contact() {
+  const { contactRef} = useContext(ScrollContext);
+
   return (
-    <section class="contact" id="contact">
+    <section ref={contactRef} class="contact" id="contact">
       <h1>Get in touch</h1>
 
       <p>
@@ -37,11 +41,7 @@ function Contact() {
           </svg>
         </a>
 
-        <a
-          href="https://www.linkedin.com/in/simonvargas01/"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://www.linkedin.com/in/simonvargas01/" target="_blank"rel="noreferrer">
           <svg
             class="icon"
             xmlns="http://www.w3.org/2000/svg"

@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { ScrollContext } from  "../../Context";
 import "./Introduction.css"
 
 function Introduction() {
+  const { aboutMeRef } = useContext(ScrollContext);
+
     return (
-        <section class='aboutMe' id="about-me">
+        <section ref={aboutMeRef} class='aboutMe' id="about-me">
       <h2>Welcome to my Portfolio!</h2>
       <p>
         From a young age, computers have been an intrinsic part of my life.

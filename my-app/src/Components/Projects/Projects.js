@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { ScrollContext } from  "../../Context";
 import "./Projects.css"
 
 const Projects = () => {
@@ -7,9 +8,10 @@ const Projects = () => {
   const handleProjectClick = (projectName) => {
     setSelectedProject(projectName);
   };
+  const { projectsRef } = useContext(ScrollContext);
 
   return (
-    <section className="project" id="projects">
+    <section ref={projectsRef} className="project"  id="projects">
       <h2>Projects</h2>
       <div className="projectContainer">
         <button className="h2" onClick={() => handleProjectClick('HeirBnB')}>

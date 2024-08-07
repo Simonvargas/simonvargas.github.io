@@ -6,12 +6,14 @@ import Projects from "./Components/Projects/Projects.js";
 import Contact from "./Components/Contact/Contact.js";
 import Footer from "./Components/Footer/Footer.js";
 import Technologies from "./Components/Technologies/Technologies.js";
+import { ScrollProvider } from "./Context.js";
 import "./App.css";
 
 
 function App() {
   return (
     <div className="App">
+      <ScrollProvider>
         <Header/>
       <Splash />
       <Introduction />
@@ -19,6 +21,7 @@ function App() {
       <Technologies />
       <Contact />
       <Footer />
+      </ScrollProvider>
     </div>
   );
 }

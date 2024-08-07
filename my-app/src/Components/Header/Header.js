@@ -1,15 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext} from "react";
 import "./Header.css"
+import { ScrollContext } from "../../Context";
 
 function Header() {
+
+   const { homeRef, aboutMeRef, projectsRef, technologiesRef, contactRef } = useContext(ScrollContext);
+
+   const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
     return (
-        <nav>
-          <a class='links' href="#home">Welcome</a>
-          <a class='links' href="#about-me">About Me</a>
-          <a class='links' href="#projects">Projects</a>
-          <a class='links' href="#technologies">Technologies</a>
-          <a class='links' href="#contact">Get in touch</a>
-        </nav>
+      <nav>
+      <a class="links" onClick={() => scrollToSection(homeRef)}>Welcome</a>
+      <a class="links" onClick={() => scrollToSection(aboutMeRef)}>About Me</a>
+      <a class="links" onClick={() => scrollToSection(projectsRef)}>Projects</a>
+      <a class="links" onClick={() => scrollToSection(technologiesRef)}>Technologies</a>
+      <a class="links" onClick={() => scrollToSection(contactRef)}>Get in touch</a>
+    </nav>
     
     );
   }

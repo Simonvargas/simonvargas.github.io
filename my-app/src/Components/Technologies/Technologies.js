@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./Technologies.css";
+import { ScrollContext } from  "../../Context";
 
 function Technologies() {
+  const { technologiesRef} = useContext(ScrollContext);
+
   return (
     
-      <div id="technologies" class="technologies">
+      <div ref={technologiesRef}id="technologies" class="technologies">
           <div class="content">
           <img
             class="photo-technologies"
