@@ -44,12 +44,70 @@
 
 /* Hover effect for buttons */
 .projectContainer .h2:hover {
-  background-color: #f0f0f0;
+  background: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
   color: #000;
 }
 
 /* Selected project details */
 .projectDetails {
-  margin-top: 2rem;
-  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.projectContainer .h2.active {
+  background: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+}
+
+
+.projectImg {
+  display: block;
+  margin: 0 auto;
+  width: 50%; /* Adjust width as needed */
+  height: 600px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.numberBar {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.number {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  color: #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.number.active {
+  background-color: #007bff;
+}
+
+.number:hover {
+  background-color: #0056b3;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
 }

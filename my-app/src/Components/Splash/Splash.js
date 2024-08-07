@@ -1,24 +1,39 @@
 import React, { useState, useEffect, useContext } from "react";
-import "./Splash.css"
-import { ScrollContext } from  "../../Context";
-
+import "./Splash.css";
+import { ScrollContext } from "../../Context";
 
 function Splash() {
-  const { homeRef} = useContext(ScrollContext);
+  const { homeRef, aboutMeRef } = useContext(ScrollContext);
 
-    return (
-      <div ref={homeRef} id="home" className="split-section">
-        <div className="split-section__text">
-          <h1>Simon Vargas</h1>
-          <p>
-          Solutions Engineer
-          </p>
-        </div>
-        <div className="split-section__image">
-          <img src="images/computer-guy.png" alt="Description" />
+  const scrollToAboutMe = () => {
+    if (aboutMeRef && aboutMeRef.current) {
+      aboutMeRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <div ref={homeRef} id="home" className="split-section">
+      <div className="split-section__text">
+        <img className="profilephoto" src="/images/menobg.png"></img>
+        <h1>Simon Vargas</h1>
+        <p>Solutions Engineer</p>
+        <div className="split-section__buttons">
+          <a onClick={scrollToAboutMe} className="btn">Learn more</a>
+
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://docs.google.com/document/d/1j7f1ArS_JaqL84lDpetM_cpL792jFoym/edit"
+          className="btn">
+          Resume
+        </a>
         </div>
       </div>
-    );
-  }
+      {/* <div className="split-section__image">
+        <img src="images/people-connected.png" alt="Description" />
+      </div> */}
+    </div>
+  );
+}
 
-  export default Splash; 
+export default Splash;

@@ -27,10 +27,12 @@ nav {
     padding: 1.35em 0;
     position: relative;
     text-transform: uppercase;
+    cursor: pointer;
   }
   
 .links:hover {
     text-decoration: underline;
     text-decoration-thickness: 3px; /* Adjusts the thickness of the underline */
     text-underline-offset: 15px; 
+    color: black;
   }
