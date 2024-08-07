@@ -29,3 +29,16 @@
 .contact h1 {
 font-size: 2.5rem;
 }
+
+/* Adjustments for mobile screens */
+@media (max-width: 600px) {
+  .contact {
+    padding: 2rem; 
+  }
+
+  .contact h3,
+  .contact p,
+  .contact span {
+    font-size: 1.2rem; 
+  }
+}

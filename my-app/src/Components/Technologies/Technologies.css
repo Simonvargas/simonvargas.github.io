@@ -3,11 +3,13 @@
       display: flex;
       width: 100%;
       box-sizing: border-box; 
+      background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   .content {
     flex: 0 0 20%; 
     display: flex;
-
     align-items: center;  }
   
 .inner {
@@ -15,8 +17,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
-    background-color: white;
+    padding: 20px;    
     width:100%;
 
   }
@@ -40,7 +41,25 @@
     gap: 10px;
   }
   
+/* Adjustments for mobile screens */
+@media (max-width: 600px) {
+  .technologies {
+    padding: 1rem; /* Reduce padding for mobile */
+  }
 
+  .content {
+    flex-direction: column; /* Stack content vertically on mobile */
+  }
+
+  .content {
+    display: none;
+  }
+
+  #technologies ul.badges a img {
+    height: 80px; 
+    width: 80px; 
+  }
+}
 
 
   

@@ -36,8 +36,9 @@ const Projects = () => {
 
  return (
     <section ref={projectsRef} className="project" id="projects">
-      <h2>Projects</h2>
       <div className="projectContainer">
+        <div className="sidebar">
+      <h2>Projects</h2>
         <button
           className={`h2 ${selectedProject === "HeirBnB" ? "active" : ""}`}
           onClick={() => handleProjectClick("HeirBnB")}
@@ -62,6 +63,7 @@ const Projects = () => {
         >
           FeelBrite
         </button>
+        
       </div>
       <TransitionGroup className="projectDetails">
        
@@ -69,7 +71,7 @@ const Projects = () => {
             {renderProjectDetails()}
           </div>
       </TransitionGroup>
-
+      </div>
     </section>
   );
 };

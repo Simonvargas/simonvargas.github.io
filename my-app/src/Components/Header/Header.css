@@ -64,5 +64,12 @@ nav {
     transform-origin: bottom right; /* Animation direction */
   }
   
+  @media (max-width: 600px) {
+    nav {
+      display: none;
+    }
+  }
+
+ 
 
   

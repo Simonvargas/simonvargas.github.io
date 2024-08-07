@@ -38,8 +38,8 @@
   }
 
   .profilephoto {
-    width: 280px; 
-    height: 350px; 
+    width: 350px; 
+    height: 450px; 
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -77,3 +77,37 @@
     color: white;
     /* background: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%); */
   }
+
+
+/* Adjustments for mobile screens */
+@media (max-width: 600px) {
+  .split-section {
+    height: 100vh; /* Allow height to adjust based on content */
+    margin-top: 0; /* Remove top margin */
+  }
+
+  .split-section__text {
+    font-size: 1.5rem; /* Adjust font size for mobile */
+    padding: 10px; 
+  }
+
+  .profilephoto {
+    width: 250px; /* Smaller profile photo for mobile */
+    height: 300px; /* Maintain aspect ratio for profile photo */
+  }
+
+  .split-section__buttons {
+    flex-direction: column; /* Stack buttons vertically on mobile */
+    gap: 10px; /* Adjust gap between buttons */
+    margin-top: 1rem; /* Adjust margin for better spacing */
+  }
+
+  .btn {
+    padding: 8px 16px; /* Adjust button padding for mobile */
+    font-size: 0.9rem; /* Reduce font size for mobile */
+    line-height: 1.75em; /* Adjust line height for mobile */
+    background-color: rgba(255, 255, 255, 0.6); /* Adjust background color */
+  }
+}
+
+
