@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 
 const images = [
-  "/images/feelbrite1.png",
-  "/images/feelbrite2.png",
-  "/images/feelbrite3.png",
-  "/images/feelbrite4.png",
-  "/images/feelbrite5.png",
+  `${process.env.PUBLIC_URL}/images/feelbrite1.png`,
+  `${process.env.PUBLIC_URL}/images/feelbrite2.png`,
+  `${process.env.PUBLIC_URL}/images/feelbrite3.png`,
+  `${process.env.PUBLIC_URL}/images/feelbrite4.png`,
+  `${process.env.PUBLIC_URL}/images/feelbrite5.png`,
 ];
 
 const FeelBrite = () => {

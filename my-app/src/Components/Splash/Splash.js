@@ -15,8 +15,7 @@ function Splash() {
   return (
     <div ref={homeRef} id="home" className="split-section">
       <div className="split-section__text">
-        <img className="profilephoto" src="/images/menobg.png"></img>
-        <h1>Simon Vargas</h1>
+      <img alt='profile photo' className="profilephoto" src={`${process.env.PUBLIC_URL}/images/menobg.png`}></img>        <h1>Simon Vargas</h1>
         <p>Solutions Engineer</p>
         <div className="split-section__buttons">
           <a onClick={scrollToAboutMe} className="btn">Learn more</a>

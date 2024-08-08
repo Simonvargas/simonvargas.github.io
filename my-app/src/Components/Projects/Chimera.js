@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 
 const images = [
-    "/images/chimera1.png", 
-    "/images/chimera2.png", 
-    "/images/chimera3.png", 
-    "/images/chimera4.png", 
-    "/images/chimera5.png", 
-    "/images/chimera6.png", 
-  ];
+  `${process.env.PUBLIC_URL}/images/chimera1.png`, 
+  `${process.env.PUBLIC_URL}/images/chimera2.png`, 
+  `${process.env.PUBLIC_URL}/images/chimera3.png`, 
+  `${process.env.PUBLIC_URL}/images/chimera4.png`, 
+  `${process.env.PUBLIC_URL}/images/chimera5.png`, 
+  `${process.env.PUBLIC_URL}/images/chimera6.png`, 
+];
 const Chimera = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const intervalRef = useRef(null);

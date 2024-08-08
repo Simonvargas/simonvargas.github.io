@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 
 const images = [
-  "/images/sneax1.png",
-  "/images/sneax2.png",
-  "/images/sneax3.png",
-  "/images/sneax4.png",
-  "/images/sneax5.png",
+  `${process.env.PUBLIC_URL}/images/sneax1.png`,
+  `${process.env.PUBLIC_URL}/images/sneax2.png`,
+  `${process.env.PUBLIC_URL}/images/sneax3.png`,
+  `${process.env.PUBLIC_URL}/images/sneax4.png`,
+  `${process.env.PUBLIC_URL}/images/sneax5.png`,
 ];
 
 const Sneax = () => {
