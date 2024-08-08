@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 
 const images = [
-  "/images/heirbnb1.png",
-  "/images/heirbnb2.png",
-  "/images/heirbnb3.png",
-  "/images/heirbnb4.png",
+  `${process.env.PUBLIC_URL}/images/heirbnb1.png`,
+  `${process.env.PUBLIC_URL}/images/heirbnb2.png`,
+  `${process.env.PUBLIC_URL}/images/heirbnb3.png`,
+  `${process.env.PUBLIC_URL}/images/heirbnb4.png`,
 ];
 
 const HeirBnB = () => {
