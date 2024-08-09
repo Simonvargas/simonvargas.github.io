@@ -138,6 +138,14 @@ General section styles
 /* Adjustments for mobile screens */
 @media (max-width: 768px) {
   /* Project container styles */
+
+  .sidebar {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 0.5rem;
+    white-space: nowrap; /* Prevent items from wrapping to the next line */
+  }
+  
   .projectContainer {
     display: flex;
     flex-wrap: wrap;
@@ -153,6 +161,7 @@ General section styles
   .projectContainer .h2 {
     font-family: 'Arial', sans-serif;
     font-size: 1.5rem;
+    width:auto;
     margin: 0;
     padding: 1rem;
     border: 1px solid #ddd;
@@ -170,6 +179,7 @@ General section styles
     height: auto;
     margin: 2rem auto;
     padding: 2rem;
+    width: 100%;
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
