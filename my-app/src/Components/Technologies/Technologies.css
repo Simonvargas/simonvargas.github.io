@@ -4,8 +4,10 @@
       width: 100%;
       box-sizing: border-box; 
       background-color: #f4f4f9;
-  border-radius: 8px;
+  border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* background-color: #222831;
+  color: white */
   }
   .content {
     flex: 0 0 20%; 
@@ -24,12 +26,14 @@
   img.photo-technologies {
     width: 25rem;
       height: 38rem;
+      
   }
 
   #technologies ul.badges a img {
     height: 100px;
     width: 100px;
     margin: 5px;
+    /* filter: invert(100%) brightness(150%); */
   }
 
   #technologies ul.badges {
@@ -60,6 +64,8 @@
     justify-content: center; /* Horizontally center content */
     flex-grow: 1; /* Allow .inner to grow and fill available space */
     padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 
   /* .badges {

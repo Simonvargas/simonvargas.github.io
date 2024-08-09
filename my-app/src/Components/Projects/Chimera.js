@@ -37,7 +37,7 @@ const Chimera = () => {
     };
 
   return (
-    <div>
+    <div className="projectContent">
             <div className="titleIcon">
 
       <h3>Chimera</h3>

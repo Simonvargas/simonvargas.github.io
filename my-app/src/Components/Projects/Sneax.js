@@ -37,7 +37,7 @@ const Sneax = () => {
   };
 
   return (
-    <div>
+    <div className="projectContent">
             <div className="titleIcon">
 
       <h3>Sneax</h3>

@@ -37,7 +37,7 @@ const FeelBrite = () => {
   };
 
   return (
-    <div>
+    <div className="projectContent">
             <div className="titleIcon">
 
       <h3>FeelBrite</h3>
