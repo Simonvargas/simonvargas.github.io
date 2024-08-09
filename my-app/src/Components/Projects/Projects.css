@@ -78,7 +78,10 @@ General section styles
 .projectContainer .h2.active {
   background: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
 }
-
+.projectCont{
+  width: 100%;
+  height: auto;
+}
 
 .projectImg {
   display: block;
@@ -154,6 +157,7 @@ General section styles
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
+    color: black;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer; 
@@ -163,7 +167,6 @@ General section styles
   /* Selected project details */
   .projectDetails {
     font-family: 'Arial', sans-serif;
-    width: 100%;
     height: auto;
     margin: 2rem auto;
     padding: 2rem;
@@ -177,6 +180,11 @@ General section styles
   
   .projectContainer .h2.active {
     background: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+  }
+
+  .projectCont{
+    width: 100%;
+    height: auto;
   }
   
   .projectImg {
