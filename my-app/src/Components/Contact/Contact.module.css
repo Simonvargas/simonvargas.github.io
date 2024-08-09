@@ -31,7 +31,7 @@ font-size: 2.5rem;
 }
 
 /* Adjustments for mobile screens */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .contact {
     padding: 2rem; 
   }
