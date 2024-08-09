@@ -33,6 +33,7 @@ const Projects = () => {
 
   return (
     <section ref={projectsRef} className="projectContainer" id="projects">
+      
         <div className="sidebarContainer">
           <h2>Projects</h2>
           <button

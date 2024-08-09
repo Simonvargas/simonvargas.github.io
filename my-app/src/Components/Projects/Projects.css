@@ -72,7 +72,7 @@
   position: relative;
   z-index: 1;
   transition: opacity 0.5s ease-in-out; 
-  overflow: hidden;
+  overflow-y: auto; 
 }
 
 
@@ -132,70 +132,57 @@
 /* Adjustments for mobile screens */
 @media (max-width: 768px) {
   /* Project container styles */
-
   .projectContainer {
     display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    /* gap: 2rem; */
-    width:100%;
-    height: 50%;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
   }
 
   .sidebarContainer {
-    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
     overflow-x: auto; /* Enable horizontal scrolling */
-    padding: 0.5rem;
     white-space: nowrap; /* Prevent items from wrapping to the next line */
-    align-items: center;
-  }
-  
-  
-  /* Button styles for project headings */
-  .projectContainer .h2 {
-    font-family: 'Arial', sans-serif;
-    font-size: 1.5rem;
-    margin: .5rem;
+    width: 100%; /* Make sidebar container take full width */
+    height: 10%;
     padding: 1rem;
-    border: 1px solid #ddd;
+    box-sizing: border-box;
+    overflow-y: hidden;
+  }
+
+  /* Button styles for project headings */
+  .sidebarContainer .h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    padding: 1rem;
     border-radius: 8px;
-    color: black;
     background-color: #ffffff;
     cursor: pointer; 
-    border: none;
     transition: background-color 0.3s ease, color 0.3s ease; 
+    display: inline-block;
   } 
-  
+
   /* Selected project details */
   .projectDetails {
-    font-family: 'Arial', sans-serif;
-    padding: 2rem;
+    flex-grow: 1;
     width: 100%;
-    height: 50%;
+    height: 90%;
+    margin-top: 1rem;
+    padding: 2rem;
     background: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    position: relative;
-    z-index: 1;
-    transition: opacity 0.5s ease-in-out; 
-    align-items: center;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; 
   }
-  
-  .projectImg {
-    width: 80%; 
-    height: 250px;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .projectContainer h2 {
-    font-size: 1.8rem; 
+  .projectImg{
+    width: 100%;
+    height: 300px;
   }
 
-  .projectContainer .h2 {
-    font-size: 1.2rem; 
-    padding: 0.75rem; 
+ 
+  .projectContainer .h2.active {
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
   }
-
 }
-
-
