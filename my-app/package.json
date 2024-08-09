@@ -30,7 +30,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://simonvargas.github.io/simonvargas.github.io/",
+  "homepage": "https://simonvargas.github.io/",
   "eslintConfig": {
     "extends": [
       "react-app",
