@@ -37,6 +37,7 @@
   background-color: #ffffff;
   cursor: pointer; 
   transition: background-color 0.3s ease, color 0.3s ease; 
+  color: black;
   
 }
 
@@ -47,12 +48,14 @@
     text-decoration-thickness: 3px; /* Adjusts the thickness of the underline */
     text-underline-offset: 15px; 
     color: black;
+    
 }
 .projectContainer .h2.active {
   text-decoration: underline;
     text-decoration-thickness: 4px; /* Adjusts the thickness of the underline */
     text-underline-offset: 15px; 
     color: black;
+    
 }
 
 /* Selected project details */
@@ -159,6 +162,7 @@
     cursor: pointer; 
     transition: background-color 0.3s ease, color 0.3s ease; 
     display: inline-block;
+    
   } 
 
   /* Selected project details */
@@ -186,5 +190,6 @@
  
   .projectContainer .h2.active {
     padding: 0.5rem 1rem; /* Adjust padding as needed */
+    font-weight: bold;
   }
 }

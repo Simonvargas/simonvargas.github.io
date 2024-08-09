@@ -44,20 +44,37 @@
 /* Adjustments for mobile screens */
 @media (max-width: 600px) {
   .technologies {
-    padding: 1rem; /* Reduce padding for mobile */
+    display: flex;
+    flex-direction: column; 
+    height: 100%; 
+    width: 100%; 
+    padding: 0;
+    overflow: none;
+  }
+  
+  .inner {
+    width: 100%; /* Take full width of the parent */
+    height: 100%; /* Take full height of the parent */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    flex-grow: 1; /* Allow .inner to grow and fill available space */
+    padding: 0;
   }
 
-  .content {
-    flex-direction: column; /* Stack content vertically on mobile */
-  }
+  /* .badges {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
 
   .content {
     display: none;
   }
 
   #technologies ul.badges a img {
-    height: 80px; 
-    width: 80px; 
+    height: 60px; 
+    width: 60px; 
   }
 }
 
