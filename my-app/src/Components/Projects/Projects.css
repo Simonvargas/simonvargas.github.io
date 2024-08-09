@@ -138,10 +138,14 @@ General section styles
   .projectContainer {
     display: flex;
     flex-wrap: wrap;
+    overflow-x: auto;
     gap: 2rem;
     justify-content: center;
     width:100%;
     height: 100%;
+  }
+  .sidebar {
+    width: 100%;
   }
   
   /* Button styles for project headings */
@@ -189,20 +193,18 @@ General section styles
   .numberBar {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
   }
   .project h2 {
-    font-size: 1.8rem; /* Smaller heading size for mobile */
-    margin-bottom: 1rem; /* Reduced space below the heading */
+    font-size: 1.8rem; 
   }
 
   .projectContainer {
-    gap: 1rem; /* Reduce gap between items for mobile */
+    gap: 1rem; 
   }
 
   .projectContainer .h2 {
-    font-size: 1.2rem; /* Smaller font size for buttons */
-    padding: 0.75rem; /* Adjust padding for buttons */
+    font-size: 1.2rem; 
+    padding: 0.75rem; 
   }
 }
 
