@@ -36,13 +36,14 @@
   .aboutMe {
     padding: 2rem 1rem; /* Reduce padding for mobile */
     height: auto; /* Allow height to adjust based on content */
-    border-radius: 4px; /* Smaller border radius for mobile */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Smaller shadow for mobile */
+    border-radius: 0%;
+
   }
 
   .aboutMe h2 {
     font-size: 1.8rem; /* Smaller heading size for mobile */
     margin-bottom: 3rem; /* Reduced space below the heading */
+    color: white;
   }
 
   .aboutMe p {
