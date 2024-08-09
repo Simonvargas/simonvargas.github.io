@@ -144,9 +144,7 @@ General section styles
     width:100%;
     height: 100%;
   }
-  .sidebar {
-    width: 100%;
-  }
+  
   
   /* Button styles for project headings */
   .projectContainer .h2 {
