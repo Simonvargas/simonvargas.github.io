@@ -36,7 +36,7 @@ const HeirBnB = () => {
   };
 
   return (
-    <div className="projectCont">
+    <div>
       <div className="titleIcon">
       <h3>HeirBnB</h3>
       <a

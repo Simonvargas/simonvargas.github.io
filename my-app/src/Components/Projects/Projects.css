@@ -1,5 +1,5 @@
-General section styles
-.project {
+/* General section styles */
+.projectContainer {
   color: #333;
   padding: 2rem 2rem 4rem;
   width: 100%;
@@ -9,26 +9,25 @@ General section styles
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: row;
+  overflow: hidden; 
+  justify-content: center; 
+  align-items: center;
 }
 
 /* Heading style */
-.project h2 {
+.projectContainer .h2 {
   font-family: 'Georgia', serif;
   font-size: 2.5rem;
   color: #1e1e1e;
   margin-bottom: 1rem;
-  text-align: center;
 }
 
-/* Project container styles */
-.projectContainer {
+.sidebarContainer {
   display: flex;
-  flex-wrap: column;
-  gap: 2rem;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  align-items: center;
+  flex-direction: column;
+  width: 250px; 
+  overflow-y: auto;
+  text-align: center;
 }
 
 /* Button styles for project headings */
@@ -42,30 +41,30 @@ General section styles
   background-color: #ffffff;
   cursor: pointer; 
   transition: background-color 0.3s ease, color 0.3s ease; 
-  text-align: end;
 }
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  width: 250px; 
-  padding: 1rem;
-  overflow-y: auto;
-}
+
+
 /* Hover effect for buttons */
 .projectContainer .h2:hover {
-  background: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
-  color: #000;
+  text-decoration: underline;
+    text-decoration-thickness: 3px; /* Adjusts the thickness of the underline */
+    text-underline-offset: 15px; 
+    color: black;
+}
+.projectContainer .h2.active {
+  text-decoration: underline;
+    text-decoration-thickness: 4px; /* Adjusts the thickness of the underline */
+    text-underline-offset: 15px; 
+    color: black;
 }
 
-
 /* Selected project details */
+
 .projectDetails {
   font-family: 'Arial', sans-serif;
   width: 100%;
   max-width: 1200px;
-  height: 100%;
-  max-height: 65vh;
-  margin: 5rem;
+  height: 77%;
   padding: 3rem;
   background: #ffffff;
   border-radius: 12px;
@@ -73,23 +72,18 @@ General section styles
   position: relative;
   z-index: 1;
   transition: opacity 0.5s ease-in-out; 
+  overflow: hidden;
 }
 
-.projectContainer .h2.active {
-  background: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
-}
-.projectCont{
-  width: 100%;
-  height: auto;
-}
 
 .projectImg {
   display: block;
   margin: 0 auto;
   margin-top: 1rem;
-  width: 60%; /* Adjust width as needed */
-  height: 400px;
+  width: 60%;
+  height: 450px;
   transition: opacity 0.5s ease-in-out;
+  object-fit: cover; 
 }
 
 .numberBar {
@@ -139,21 +133,21 @@ General section styles
 @media (max-width: 768px) {
   /* Project container styles */
 
-  .sidebar {
-    width: 100%;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    padding: 0.5rem;
-    white-space: nowrap; /* Prevent items from wrapping to the next line */
-  }
-  
   .projectContainer {
     display: flex;
     flex-wrap: wrap;
-    overflow-x: auto;
-    gap: 2rem;
-    justify-content: center;
+    overflow: hidden;
+    /* gap: 2rem; */
     width:100%;
-    height: 100%;
+    height: 50%;
+  }
+
+  .sidebarContainer {
+    /* width: 100%; */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 0.5rem;
+    white-space: nowrap; /* Prevent items from wrapping to the next line */
+    align-items: center;
   }
   
   
@@ -161,57 +155,40 @@ General section styles
   .projectContainer .h2 {
     font-family: 'Arial', sans-serif;
     font-size: 1.5rem;
-    width:auto;
-    margin: 0;
+    margin: .5rem;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
     color: black;
     background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer; 
+    border: none;
     transition: background-color 0.3s ease, color 0.3s ease; 
   } 
   
   /* Selected project details */
   .projectDetails {
     font-family: 'Arial', sans-serif;
-    height: auto;
-    margin: 2rem auto;
     padding: 2rem;
     width: 100%;
+    height: 50%;
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 1;
     transition: opacity 0.5s ease-in-out; 
-  }
-  
-  .projectContainer .h2.active {
-    background: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
-  }
-
-  .projectCont{
-    width: 100%;
-    height: auto;
+    align-items: center;
   }
   
   .projectImg {
-    display: block;
-    margin: 0 auto;
-    margin-top: 1rem;
     width: 80%; 
     height: 250px;
     transition: opacity 0.5s ease-in-out;
   }
   
-  .project h2 {
+  .projectContainer h2 {
     font-size: 1.8rem; 
-  }
-
-  .projectContainer {
-    gap: 1rem; 
   }
 
   .projectContainer .h2 {
