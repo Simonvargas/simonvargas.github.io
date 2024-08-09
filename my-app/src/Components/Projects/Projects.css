@@ -16,7 +16,6 @@
 
 /* Heading style */
 .sidebarContainer {
-
   overflow-y: auto;
   text-align: center;
   flex: 1;
@@ -25,6 +24,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 1rem;
 }
 
 /* Button styles for project headings */
@@ -39,6 +39,10 @@
   transition: background-color 0.3s ease, color 0.3s ease; 
   color: black;
   
+}
+
+.sidebarContainer h2 {
+  font-size: xx-large;
 }
 
 
@@ -64,6 +68,7 @@
   flex: 3;
   font-family: 'Arial', sans-serif;
   width: 80%;
+  margin-right: 5rem;
   padding: 3rem;
   background: #ffffff;
   border-radius: 12px;
@@ -187,6 +192,9 @@
     height: 300px;
   }
 
+  .sidebarContainer h2 {
+    font-size: x-large;
+  }
  
   .projectContainer .h2.active {
     padding: 0.5rem 1rem; /* Adjust padding as needed */
