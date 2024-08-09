@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import styles from './Contact.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ScrollContext } from  "../../Context";
+import { ScrollContext } from  "../../Context/Context";
 
 
 function Contact() {

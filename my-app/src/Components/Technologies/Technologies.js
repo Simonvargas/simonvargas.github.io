@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./Technologies.css";
-import { ScrollContext } from  "../../Context";
+import { ScrollContext } from  "../../Context/Context";
 
 function Technologies() {
   const { technologiesRef} = useContext(ScrollContext);

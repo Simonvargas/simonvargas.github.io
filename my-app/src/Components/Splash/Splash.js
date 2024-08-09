@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./Splash.css";
-import { ScrollContext } from "../../Context";
+import { ScrollContext } from "../../Context/Context";
 
 function Splash() {
   const { homeRef, aboutMeRef, setActiveLink } = useContext(ScrollContext);

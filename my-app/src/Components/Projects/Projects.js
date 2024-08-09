@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { ScrollContext } from  "../../Context";
+import { ScrollContext } from  "../../Context/Context";
 import "./Projects.css"
 import HeirBnB from "./HeirBnB";
 import Chimera from "./Chimera";

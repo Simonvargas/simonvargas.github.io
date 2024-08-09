@@ -1,6 +1,6 @@
 import React, { useState, useContext} from "react";
 import "./Header.css"
-import { ScrollContext } from "../../Context";
+import { ScrollContext } from "../../Context/Context";
 
 function Header() {
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { ScrollContext } from  "../../Context";
+import { ScrollContext } from  "../../Context/Context";
 import "./Introduction.css"
 
 function Introduction() {

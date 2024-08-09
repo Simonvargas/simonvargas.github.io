@@ -6,7 +6,7 @@ import Projects from "./Components/Projects/Projects.js";
 import Contact from "./Components/Contact/Contact.js";
 import Footer from "./Components/Footer/Footer.js";
 import Technologies from "./Components/Technologies/Technologies.js";
-import { ScrollProvider } from "./Context.js";
+import { ScrollProvider } from "./Context/Context.js";
 import { motion } from 'framer-motion';
 import "./App.css";
 
