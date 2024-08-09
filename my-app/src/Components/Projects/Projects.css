@@ -1,7 +1,7 @@
 /* General section styles */
 .projectContainer {
   color: #333;
-  padding: 2rem 2rem 4rem;
+  /* padding: 2rem 2rem 4rem; */
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
@@ -15,24 +15,20 @@
 }
 
 /* Heading style */
-.projectContainer .h2 {
-  font-family: 'Georgia', serif;
-  font-size: 2.5rem;
-  color: #1e1e1e;
-  margin-bottom: 1rem;
-}
-
 .sidebarContainer {
-  display: flex;
-  flex-direction: column;
-  width: 250px; 
+
   overflow-y: auto;
   text-align: center;
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Button styles for project headings */
-.projectContainer .h2 {
-  font-family: 'Arial', sans-serif;
+.sidebarContainer .h2 {
   font-size: 1.5rem;
   margin: 2rem;
   padding: 1rem;
@@ -41,6 +37,7 @@
   background-color: #ffffff;
   cursor: pointer; 
   transition: background-color 0.3s ease, color 0.3s ease; 
+  
 }
 
 
@@ -61,10 +58,9 @@
 /* Selected project details */
 
 .projectDetails {
+  flex: 3;
   font-family: 'Arial', sans-serif;
-  width: 100%;
-  max-width: 1200px;
-  height: 77%;
+  width: 80%;
   padding: 3rem;
   background: #ffffff;
   border-radius: 12px;
@@ -136,26 +132,27 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    padding: 0;
   }
 
   .sidebarContainer {
     display: flex;
     flex-direction: row;
     overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent items from wrapping to the next line */
     width: 100%; /* Make sidebar container take full width */
-    height: 10%;
-    padding: 1rem;
+    height: 50%;
     box-sizing: border-box;
     overflow-y: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
   }
 
   /* Button styles for project headings */
   .sidebarContainer .h2 {
     font-family: 'Arial', sans-serif;
     font-size: 1.2rem;
-    margin: 0.5rem;
+    margin: .5rem;
     padding: 1rem;
     border-radius: 8px;
     background-color: #ffffff;
@@ -168,13 +165,18 @@
   .projectDetails {
     flex-grow: 1;
     width: 100%;
-    height: 90%;
-    margin-top: 1rem;
-    padding: 2rem;
+    height: 50%;
+    /* margin-top: .2rem; */
+    padding: 1rem;
     background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    /* border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2); */
+    box-shadow: none;;
+    margin: .2rem;
     overflow-y: auto; 
+  }
+  .projectContent {
+    padding: 1rem;
   }
   .projectImg{
     width: 100%;
