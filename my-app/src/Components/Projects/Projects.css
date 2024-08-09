@@ -25,6 +25,8 @@
   flex-direction: column;
   align-items: center;
   margin-left: 1rem;
+  
+
 }
 
 /* Button styles for project headings */
@@ -43,6 +45,7 @@
 
 .sidebarContainer h2 {
   font-size: xx-large;
+  color: rgb(112, 112, 112, 1)
 }
 
 
@@ -51,14 +54,14 @@
   text-decoration: underline;
     text-decoration-thickness: 3px; /* Adjusts the thickness of the underline */
     text-underline-offset: 15px; 
-    color: black;
+    color:  rgba(59, 130, 246, 0.5);
     
 }
 .projectContainer .h2.active {
   text-decoration: underline;
     text-decoration-thickness: 4px; /* Adjusts the thickness of the underline */
     text-underline-offset: 15px; 
-    color: black;
+    color:  rgba(59, 130, 246, 0.5);
     
 }
 

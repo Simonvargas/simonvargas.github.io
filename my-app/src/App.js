@@ -7,18 +7,13 @@ import Contact from "./Components/Contact/Contact.js";
 import Footer from "./Components/Footer/Footer.js";
 import Technologies from "./Components/Technologies/Technologies.js";
 import { ScrollProvider } from "./Context/Context.js";
-import { motion } from 'framer-motion';
 import "./App.css";
 
 
 function App() {
   return (
     <div className="App">
-       <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2 }}
-    >
+       
       <ScrollProvider>
         <Header/>
       <Splash />
@@ -28,7 +23,6 @@ function App() {
       <Contact />
       <Footer />
       </ScrollProvider>
-      </motion.div>
     </div>
   );
 }

@@ -1,13 +1,13 @@
 
 .aboutMe {
-  background-color:#222831; /* Light background color for contrast */
   color: white; /* Dark text color for readability */
   padding: 5rem 2rem; 
   width: 100%; /* Full width of its container */
   height: 100vh;
   box-sizing: border-box; /* Ensure padding is included in the width */
-  border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #222831;
+
 }
 
 /* Heading style */
