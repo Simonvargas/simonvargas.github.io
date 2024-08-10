@@ -12,9 +12,8 @@
   overflow: hidden; 
   justify-content: center; 
   align-items: center;
-  background-image: url("/public/images/splash2.png");
-  background-size: cover;
-  background-position: center;
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
 }
 
 /* Heading style */
@@ -57,14 +56,14 @@
   text-decoration: underline;
     text-decoration-thickness: 3px; /* Adjusts the thickness of the underline */
     text-underline-offset: 15px; 
-    color:  rgba(59, 130, 246, 0.5);
+    color:  black;
     
 }
 .projectContainer .h2.active {
   text-decoration: underline;
     text-decoration-thickness: 4px; /* Adjusts the thickness of the underline */
     text-underline-offset: 15px; 
-    color:  rgba(59, 130, 246, 0.5);
+    color:  black;
     
 }
 

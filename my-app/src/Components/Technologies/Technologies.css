@@ -3,12 +3,12 @@
       display: flex;
       width: 100%;
       box-sizing: border-box; 
-      /* background-color: #f4f4f9; */
-      color: white;
+      background-color: #f4f4f9;
+      color: black;
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  --tw-bg-opacity: 1;
-  background-color: rgba(17,24,39,var(--tw-bg-opacity)); /* Light background color for contrast */
+  /* --tw-bg-opacity: 1;
+  background-color: rgba(17,24,39,var(--tw-bg-opacity));  */
   }
   .content {
     flex: 0 0 20%; 
@@ -34,7 +34,7 @@
     height: 100px;
     width: 100px;
     margin: 5px;
-    filter: invert(100%) brightness(150%);
+    /* filter: invert(100%) brightness(150%); */
   }
 
   #technologies ul.badges {

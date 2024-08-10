@@ -42,6 +42,13 @@ function Header() {
       >
         Get in touch
       </a>
+      <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://docs.google.com/document/d/1j7f1ArS_JaqL84lDpetM_cpL792jFoym/edit"
+          className="links links1">
+          Resume
+        </a>
     </nav>
   );
 }

@@ -47,19 +47,19 @@ nav {
     text-decoration: underline;
     text-decoration-thickness: 3px; /* Adjusts the thickness of the underline */
     text-underline-offset: 15px; 
-    color:  rgba(59, 130, 246, 0.5);
+    color:  black;
     
   }
 
   .links.active {
-    color:  rgba(59, 130, 246, 0.5); 
+    color:  black;
   }
   
   
   .links.active::after {
     transform: scaleX(1); /* Show underline */
     transform-origin: bottom left; /* Animation direction */
-    color:  rgba(59, 130, 246, 0.5);
+    color:  black;
   }
   .links::after {
     content: '';
@@ -68,13 +68,14 @@ nav {
     bottom: 6px; /* Adjust based on your design */
     width: 100%;
     height: 3px; /* Adjust thickness */
-    /* background: black;  */
-    background:  rgba(59, 130, 246, 0.5);
-    color:  rgba(59, 130, 246, 0.5);
+    background: black; 
+    color:  black;
     transition: transform 0.3s ease; /* Smooth transition */
     transform: scaleX(0); /* Hide by default */
     transform-origin: bottom right; /* Animation direction */
   }
+
+  
   
   @media (max-width: 768px) {
     nav {
