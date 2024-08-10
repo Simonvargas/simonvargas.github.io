@@ -32,39 +32,23 @@ const Projects = () => {
   const { projectsRef } = useContext(ScrollContext);
 
   return (
-    <section ref={projectsRef} className="projectContainer" id="projects">
-      
-        <div className="sidebarContainer">
-          <h2>Projects</h2>
-          <button
-            className={`h2 ${selectedProject === "HeirBnB" ? "active" : ""}`}
-            onClick={() => handleProjectClick("HeirBnB")}
+    <section ref={projectsRef} className="projectsSection" id="projects">
+      <a href="https://github.com/simonvargas/FeelBrite"
+          target="_blank"
+          className="a2"
+          rel="noreferrer"
           >
-            HeirBnB
-          </button>
-          <button
-            className={`h2 ${selectedProject === "Chimera" ? "active" : ""}`}
-            onClick={() => handleProjectClick("Chimera")}
-          >
-            Chimera
-          </button>
-          <button
-            className={`h2 ${selectedProject === "Sneax" ? "active" : ""}`}
-            onClick={() => handleProjectClick("Sneax")}
-          >
-            Sneax
-          </button>
-          <button
-            className={`h2 ${selectedProject === "FeelBrite" ? "active" : ""}`}
-            onClick={() => handleProjectClick("FeelBrite")}
-          >
-            FeelBrite
-          </button>
-        </div>
-        <div className="projectDetails">
-            {renderProjectDetails()}
-        </div>
-    </section>
+  <div className="projectCard">
+    <div className="imageContainer">
+      <img className="projectImg" src={`${process.env.PUBLIC_URL}/images/heirbnb1.png`} alt="Heirbnb project"></img>
+    </div>
+    <div className="textContainer">
+      <h3>Heirbnb</h3>
+      <p>Travel accommodation booking Application</p>
+    </div>
+  </div>
+  </a>
+</section>
   );
 };
 
