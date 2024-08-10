@@ -128,7 +128,8 @@ b {
     flex-direction: column; /* Stack children vertically */
     align-items: center; /* Center children horizontally if needed */
     background-image: none;
-    /* padding: 0; */
+    position: relative; /* Allows positioning adjustments */
+    top: -3rem
   }
 
   .split-section__text {
