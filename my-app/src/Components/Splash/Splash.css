@@ -13,7 +13,10 @@
   background-color: white;
   color: white;
   box-sizing: border-box;
+  
 }
+
+
 
 
 .split-section__text {
@@ -22,10 +25,10 @@
   font-family: Bitter, serif;
   margin-bottom: 2rem;
   color: black;
-  font-size: 3rem;
+  font-size: 4rem;
   opacity: 0;
   animation: fadeInText 2s forwards;
-  animation-delay: 0.5s; /* Delay for the text to start appearing */
+  animation-delay: .5s; /* Delay for the text to start appearing */
   
 }
 
@@ -79,7 +82,7 @@ b {
 }
 
 .arrow {
-  font-size: 2rem; /* Increase the size of the arrow */
+  font-size: 2.5rem; /* Increase the size of the arrow */
   color: black; /* White color for the arrow */
   animation: bounce 2s infinite; /* Infinite bounce animation */
   transition: transform 0.2s ease;

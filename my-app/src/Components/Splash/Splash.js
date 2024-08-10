@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./Splash.css";
 import { ScrollContext } from "../../Context/Context";
+import { motion } from "framer-motion";
 
 function Splash() {
   const { homeRef, aboutMeRef, setActiveLink } = useContext(ScrollContext);
@@ -13,6 +14,14 @@ function Splash() {
   };
 
   return (
+    <motion.div
+      ref={homeRef}
+      id="home"
+      className="split-section"
+      initial={{ y: "-100%", opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+    >
     <div ref={homeRef} id="home" className="split-section">
       <div className="split-section__content">
         <div className="split-section__text">
@@ -39,7 +48,7 @@ function Splash() {
        
         
       </div>
-     
+     </motion.div>
   );
 }
 
