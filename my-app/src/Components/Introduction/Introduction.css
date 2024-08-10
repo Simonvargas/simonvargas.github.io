@@ -13,7 +13,7 @@
 /* Heading style */
 .aboutMe h2 {
   font-family: 'Georgia', serif; /* Elegant serif font */
-  font-size: 2.5rem; /* Large heading size */
+  font-size: 4.5rem; /* Large heading size */
   color: white; /* Darker color for the heading */
   margin-bottom: 5rem;
 }
@@ -21,9 +21,9 @@
 /* Paragraph styles */
 .aboutMe p {
   font-family: 'Arial', sans-serif; /* Clean sans-serif font */
-  font-size: 1.5rem; /* Slightly larger font size for readability */
+  font-size: 2rem; /* Slightly larger font size for readability */
   line-height: 1.6; /* Increased line height for better readability */
-  margin-bottom: 3rem; /* Space between paragraphs */
+  margin-bottom: 3rem; 
 }
 
 .aboutMe h2, .aboutMe p {

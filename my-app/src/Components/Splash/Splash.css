@@ -18,7 +18,7 @@
 
 .split-section__text {
   width: 50%;
-  text-align: left;
+  text-align: center;
   font-family: Bitter, serif;
   margin-bottom: 2rem;
   color: black;
@@ -26,7 +26,9 @@
   opacity: 0;
   animation: fadeInText 2s forwards;
   animation-delay: 0.5s; /* Delay for the text to start appearing */
+  
 }
+
 
 .split-section__content {
   display: flex;
@@ -139,7 +141,6 @@ b {
   }
   .split-section__text p {
     display: none;
-    
   }
 
   .solutionsEngineer {
