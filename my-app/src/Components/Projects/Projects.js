@@ -32,23 +32,63 @@ const Projects = () => {
   const { projectsRef } = useContext(ScrollContext);
 
   return (
+    <div>
+      <h2 className="h2Projects">Featured Work</h2>
     <section ref={projectsRef} className="projectsSection" id="projects">
-      <a href="https://github.com/simonvargas/FeelBrite"
+      <div>
+      <a href="https://github.com/simonvargas/HeirBnB"
+          target="_blank"
+          className="a2"
+          rel="noreferrer"
+          >
+  <div className="projectCard">
+      <img className="projectImg" src={`${process.env.PUBLIC_URL}/images/heirbnb1.png`} alt="Heirbnb project"></img>
+    <div className="textContainer">
+      <h3>HeirBnB</h3>
+      <p>Travel accommodation booking Application</p>
+    </div>
+  </div>
+  </a>
+  </div>
+
+  <div>
+      <a href="https://github.com/simonvargas/Chimera"
           target="_blank"
           className="a2"
           rel="noreferrer"
           >
   <div className="projectCard">
     <div className="imageContainer">
-      <img className="projectImg" src={`${process.env.PUBLIC_URL}/images/heirbnb1.png`} alt="Heirbnb project"></img>
+      <img className="projectImg" src={`${process.env.PUBLIC_URL}/images/chimera1.png`} alt="Heirbnb project"></img>
     </div>
     <div className="textContainer">
-      <h3>Heirbnb</h3>
-      <p>Travel accommodation booking Application</p>
+      <h3>Chimera</h3>
+      <p>Crowdfunding platform</p>
     </div>
   </div>
   </a>
+  </div>
+
+  <div>
+      <a href="https://github.com/simonvargas/Sneax"
+          target="_blank"
+          className="a2"
+          rel="noreferrer"
+          >
+  <div className="projectCard">
+    <div className="imageContainer">
+      <img className="projectImg" src={`${process.env.PUBLIC_URL}/images/sneax1.png`} alt="Heirbnb project"></img>
+    </div>
+    <div className="textContainer">
+      <h3>Sneax</h3>
+      <p>Investment Trading App</p>
+    </div>
+  </div>
+  </a>
+  </div>
+  
 </section>
+</div>
   );
 };
 

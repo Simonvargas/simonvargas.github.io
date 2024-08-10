@@ -3,7 +3,6 @@
   color: white; /* Dark text color for readability */
   padding: 5rem 2rem; 
   width: 100%; /* Full width of its container */
-  height: 100vh;
   box-sizing: border-box; /* Ensure padding is included in the width */
   box-shadow: 0 4px 8px #0000001a; /* Subtle shadow for depth */
   background-color: #222831;
