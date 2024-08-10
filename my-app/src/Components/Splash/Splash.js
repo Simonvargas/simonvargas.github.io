@@ -16,13 +16,14 @@ function Splash() {
     <div ref={homeRef} id="home" className="split-section">
       <div className="split-section__content">
         <div className="split-section__text">
-          <span></span>
       <p>Hi, my name is <b>Simon.</b></p>
-      {/* <p> I'm a solutions engineer based in the US.</p> */}
       </div>
-      <img alt='profile of person' className="profilephoto" src={`${process.env.PUBLIC_URL}/images/menobg.png`}></img>       
+      <img alt='profile of person' className="profilephoto" src={`${process.env.PUBLIC_URL}/images/menobg.png`}></img>      
+      <div className="nameBox"><span className="firstName">Simon</span> <span className="lastName">Vargas</span></div>  
+
       </div>
-        {/* <div className="split-section__buttons">
+        <div className="split-section__buttons">
+        <p className="solutionsEngineer">Solutions Engineer</p>
           <a onClick={scrollToAboutMe} className="btn">Learn more</a>
      <a
           target="_blank"
@@ -31,7 +32,7 @@ function Splash() {
           className="btn">
           Resume
         </a>
-        </div> */}
+        </div>
         <div class="scroll-button">
   <span onClick={scrollToAboutMe} class="arrow">&#8595;</span>
 </div>

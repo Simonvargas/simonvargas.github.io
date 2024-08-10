@@ -34,9 +34,14 @@
   align-items: center;
   justify-content: center;
   width: 50%;
-  
+}
+.split-section__buttons {
+  display: none !important;
 }
 
+.solutionsEngineer {
+  display: none;
+}
 b {
   font-weight: 800;
   color:  rgba(59, 130, 246, 0.5);
@@ -55,19 +60,10 @@ b {
 }
 
 .nameBox {
-  font-weight: bold;
-  font-size: 3rem;
-  letter-spacing: 0.2rem;
-  margin-bottom: 1rem;
+  display:none;
 }
 
-.split-section__text h1 {
-  margin: 0 0 20px;
-}
 
-.split-section__text p {
-  margin: 0;
-}
 .scroll-button {
   display: flex;
   justify-content: center;
@@ -123,63 +119,61 @@ b {
 }
 
 
-
-.split-section__buttons {
-  display: flex;
-  gap: 25px;
-  margin-top: 1.5rem;
-}
-
-.btn {
-  padding: 10px 20px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  /* color: #a5a5a5; */
-  color: black;
-  border: solid 1px !important;
-  border-color: #a5a5a5 !important;
-  border-radius: 3em;
-  text-decoration: none;
-  transition: background-color 0.3s;
-  cursor: pointer;
-  letter-spacing: 0.2em;
-  line-height: 2.75em;
-  padding: 0 3.75em;
-  background-color: rgb(255, 255, 255, 0.4);
-}
-
-.btn:hover {
-  background-color: black;
-  color: white;
-  /* background: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%); */
-}
-
 /* Adjustments for mobile screens */
 @media (max-width: 768px) {
   .split-section {
-    height: 100vh; /* Allow height to adjust based on content */
+    height: 100%; /* Allow height to adjust based on content */
     margin-top: 0; /* Remove top margin */
-    background-image: none;
-    /* background-color: black;
-    color: white; */
-    /* background-color: #d7d7d7; */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally if needed */
+    /* padding: 0; */
   }
 
   .split-section__text {
     font-size: 1.5rem; /* Adjust font size for mobile */
     /* color:rgb(84, 82, 82) */
+    margin-bottom: 0;
+  }
+  .split-section__text p {
+    display: none;
+    
+  }
+
+  .solutionsEngineer {
+    display: block;
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
+  } 
+
+  .split-section__content {
+    display: flex;
+    flex-direction: column; /* Ensure children are stacked vertically */
+    align-items: center; /* Center content horizontally */
+    width: 100%;
+    text-align: center; /* Center text inside */
   }
 
   .profilephoto {
     width: 200px; /* Smaller profile photo for mobile */
     height: 250px; /* Maintain aspect ratio for profile photo */
+    padding: 1rem;
   }
 
   .split-section__buttons {
-    flex-direction: column; /* Stack buttons vertically on mobile */
-    gap: 20px;
+    display: flex !important; 
+    flex-direction: column; 
+    display: flex;
+    gap: 25px;
+    margin-top: 1.5rem;
+    
   }
 
+  .scroll-button {
+   display: none;
+  }
   .nameBox {
     display: inline-block; /* Allows padding and border to fit around text */
     padding: 1.5rem 2rem; /* Adjust padding to make the box larger */
@@ -190,8 +184,27 @@ b {
     font-size: 2rem; /* Increase font size for emphasis */
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 2rem;
     color: black;
+  }
+
+  .btn {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+    border: solid 1px !important;
+    border-color: #a5a5a5 !important;
+    border-radius: 3em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    letter-spacing: 0.2em;
+    line-height: 2.75em;
+    background-color: rgb(255, 255, 255, 0.4);
+  }
+
+  .btn:hover {
+    background-color: black;
+    color: white;
   }
 
   .nameBox .firstName {
