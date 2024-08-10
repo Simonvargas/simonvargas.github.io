@@ -5,7 +5,7 @@
   width: 100%; /* Full width of its container */
   height: 100vh;
   box-sizing: border-box; /* Ensure padding is included in the width */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 4px 8px #0000001a; /* Subtle shadow for depth */
   background-color: #222831;
 
 }

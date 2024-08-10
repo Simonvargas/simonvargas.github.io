@@ -12,6 +12,9 @@
   overflow: hidden; 
   justify-content: center; 
   align-items: center;
+  background-image: url("/public/images/splash2.png");
+  background-size: cover;
+  background-position: center;
 }
 
 /* Heading style */
@@ -40,12 +43,12 @@
   cursor: pointer; 
   transition: background-color 0.3s ease, color 0.3s ease; 
   color: black;
+  background-color: rgba(255, 255, 255, 0);
   
 }
 
 .sidebarContainer h2 {
   font-size: xx-large;
-  color: rgb(112, 112, 112, 1)
 }
 
 

@@ -36,6 +36,10 @@ nav {
     text-transform: uppercase;
     cursor: pointer;
     transition: color 0.3s ease, text-decoration-thickness 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly below */
+    animation: popUpImage 1.5s forwards;
+    animation-delay: .1s; /* Delay for the image to pop up after text is done */
 
   }
   
