@@ -3,7 +3,6 @@
   color: white; /* Dark text color for readability */
   padding: 5rem 2rem; 
   width: 100%; /* Full width of its container */
-  /* height: 100vh; */
   box-sizing: border-box; /* Ensure padding is included in the width */
   box-shadow: 0 4px 8px #0000001a; /* Subtle shadow for depth */
   /* background-color: #222831; */
@@ -18,8 +17,8 @@ color: black;
 .aboutMe h2 {
   font-family: 'Georgia', serif; /* Elegant serif font */
   font-size: 4.5rem; /* Large heading size */
-  color: black; /* Darker color for the heading */
   margin-bottom: 5rem;
+  
 }
 
 /* Paragraph styles */
@@ -28,7 +27,6 @@ color: black;
   font-size: 2rem; /* Slightly larger font size for readability */
   line-height: 1.6; /* Increased line height for better readability */
   margin-bottom: 3rem; 
-  height:
 }
 
 .aboutMe h2, .aboutMe p {

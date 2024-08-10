@@ -13,11 +13,7 @@
   background-color: white;
   color: white;
   box-sizing: border-box;
-  
 }
-
-
-
 
 .split-section__text {
   width: 50%;
@@ -28,10 +24,8 @@
   font-size: 4rem;
   opacity: 0;
   animation: fadeInText 2s forwards;
-  animation-delay: .5s; /* Delay for the text to start appearing */
-  
+  animation-delay: 0.5s; /* Delay for the text to start appearing */
 }
-
 
 .split-section__content {
   display: flex;
@@ -40,6 +34,7 @@
   justify-content: center;
   width: 50%;
 }
+
 .split-section__buttons {
   display: none !important;
 }
@@ -47,9 +42,15 @@
 .solutionsEngineer {
   display: none;
 }
-b {
+
+.split-section__text b {
   font-weight: 800;
-  color: black;
+    background: linear-gradient(45deg, #C0C0C0, #A9A9A9, #808080, #C0C0C0); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  
 }
 
 .profilephoto {
@@ -65,9 +66,8 @@ b {
 }
 
 .nameBox {
-  display:none;
+  display: none;
 }
-
 
 .scroll-button {
   display: flex;
@@ -90,7 +90,8 @@ b {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0); /* Start and end at the same position */
   }
   50% {
@@ -101,7 +102,6 @@ b {
 .arrow:hover {
   transform: translateY(-20px); /* Move up by 20px on hover */
 }
-
 
 @keyframes fadeInText {
   0% {
@@ -123,7 +123,6 @@ b {
   }
 }
 
-
 /* Adjustments for mobile screens */
 @media (max-width: 768px) {
   .split-section {
@@ -134,7 +133,7 @@ b {
     align-items: center; /* Center children horizontally if needed */
     background-image: none;
     position: relative; /* Allows positioning adjustments */
-    top: -3rem
+    top: -3rem;
   }
 
   .split-section__text {
@@ -152,7 +151,7 @@ b {
     text-align: center;
     margin: 0;
     font-size: 1.5rem;
-  } 
+  }
 
   .split-section__content {
     display: flex;
@@ -169,16 +168,15 @@ b {
   }
 
   .split-section__buttons {
-    display: flex !important; 
-    flex-direction: column; 
+    display: flex !important;
+    flex-direction: column;
     display: flex;
     gap: 25px;
     margin-top: 1.5rem;
-    
   }
 
   .scroll-button {
-   display: none;
+    display: none;
   }
   .nameBox {
     display: inline-block; /* Allows padding and border to fit around text */

@@ -56,8 +56,7 @@ const Chimera = () => {
         </a>
         </div>
       <p>A crowd funding platform that allows people to raise money for events ranging from life events such as celebrations and graduations to challenging circumstances like accidents and illnesses.</p>
-      <li>Donate to a project or cause of your choice</li>
-     <li> Create a project or cause you would like to receive funding for</li>
+   
        <img
         className="projectImg"
         src={images[currentImageIndex]}

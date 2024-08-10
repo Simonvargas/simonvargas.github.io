@@ -57,9 +57,6 @@ const HeirBnB = () => {
         A simple 1 full crud application showcasing AWS & Google Maps Api
         Integration.
       </p>
-      <li>AWS to upload photo of your home</li>
-      <li> Google Maps api implemented to see where a home is located</li>
-      <li>Functional search bar</li>
       <img
         className="projectImg"
         src={images[currentImageIndex]}

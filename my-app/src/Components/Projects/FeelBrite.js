@@ -56,10 +56,6 @@ const FeelBrite = () => {
         </a>
         </div>
       <p>An event management platform that allows consumers to browse through a selection of categories of exercise related events and allows the user to sign up, create events, register for events, and bookmark events.</p>
-      <li>Browse through fitness events happening nearby in your area
-      </li>
-      <li>Register or bookmark classes to your own personal profile
-      </li>
 
       <img
         className="projectImg"
