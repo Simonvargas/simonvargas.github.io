@@ -39,13 +39,13 @@ color: black;
     padding: 2rem 1rem; /* Reduce padding for mobile */
     height: auto; /* Allow height to adjust based on content */
     border-radius: 0%;
+    
 
   }
 
   .aboutMe h2 {
     font-size: 1.8rem; /* Smaller heading size for mobile */
     margin-bottom: 3rem; /* Reduced space below the heading */
-    color: white;
   }
 
   .aboutMe p {

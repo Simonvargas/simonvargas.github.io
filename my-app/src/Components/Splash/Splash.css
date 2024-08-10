@@ -126,14 +126,11 @@
 /* Adjustments for mobile screens */
 @media (max-width: 768px) {
   .split-section {
-    height: 100%; /* Allow height to adjust based on content */
+    height: 85vh; /* Allow height to adjust based on content */
     margin-top: 0; /* Remove top margin */
     display: flex; /* Use flexbox layout */
     flex-direction: column; /* Stack children vertically */
     align-items: center; /* Center children horizontally if needed */
-    background-image: none;
-    position: relative; /* Allows positioning adjustments */
-    top: -3rem;
   }
 
   .split-section__text {
@@ -175,9 +172,9 @@
     margin-top: 1.5rem;
   }
 
-  .scroll-button {
+  /* .scroll-button {
     display: none;
-  }
+  } */
   .nameBox {
     display: inline-block; /* Allows padding and border to fit around text */
     padding: 1.5rem 2rem; /* Adjust padding to make the box larger */

@@ -33,7 +33,7 @@ function Splash() {
       </div>
         <div className="split-section__buttons">
         <p className="solutionsEngineer">Solutions Engineer</p>
-          <a onClick={scrollToAboutMe} className="btn">Learn more</a>
+         
      <a
           target="_blank"
           rel="noreferrer"
