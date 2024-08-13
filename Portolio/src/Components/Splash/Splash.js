@@ -79,7 +79,7 @@ function Splash() {
           </span>
         </div>
       </div>
-    </motion.div>
+     </motion.div>
   );
 }
 

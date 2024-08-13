@@ -5,7 +5,6 @@ import HeirBnB from "./HeirBnB";
 import Chimera from "./Chimera";
 import Sneax from "./Sneax";
 import FeelBrite from "./FeelBrite";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState("HeirBnB");
@@ -30,6 +29,8 @@ const Projects = () => {
   };
 
   const { projectsRef } = useContext(ScrollContext);
+
+  
 
   return (
     <div ref={projectsRef} id="projects">

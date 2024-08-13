@@ -1,7 +1,7 @@
 nav {
   background-color: white;
     color: white;
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
     list-style: none;
     position:fixed;
@@ -45,6 +45,8 @@ nav {
     color:  black;
     
   }
+
+
 
   .links.active {
     color:  black;

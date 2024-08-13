@@ -4,7 +4,6 @@ import { ScrollContext } from  "../../Context/Context";
 
 function Technologies() {
   const { technologiesRef} = useContext(ScrollContext);
-
   return (
     
       <div ref={technologiesRef}id="technologies" class="technologies">
