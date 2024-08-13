@@ -1,7 +1,7 @@
 
 .aboutMe {
   color: white; /* Dark text color for readability */
-  padding: 5rem 2rem; 
+  padding: 4rem 2rem; 
   width: 100%; /* Full width of its container */
   box-sizing: border-box; /* Ensure padding is included in the width */
   box-shadow: 0 4px 8px #0000001a; /* Subtle shadow for depth */
@@ -17,8 +17,6 @@ color: black;
 .aboutMe h2 {
   font-family: 'Georgia', serif; /* Elegant serif font */
   font-size: 4.5rem; /* Large heading size */
-  margin-bottom: 5rem;
-  
 }
 
 /* Paragraph styles */

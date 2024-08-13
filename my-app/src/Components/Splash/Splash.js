@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import "./Splash.css";
+import styles from "./Splash.module.css";
 import { ScrollContext } from "../../Context/Context";
 import { motion } from "framer-motion";
 
@@ -17,38 +17,40 @@ function Splash() {
     <motion.div
       ref={homeRef}
       id="home"
-      className="split-section"
+      className={styles.splitSection}
       initial={{ y: "-100%", opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1, ease: "easeOut" }}
     >
-    <div ref={homeRef} id="home" className="split-section">
-      <div className="split-section__content">
-        <div className="split-section__text">
-      <p>Hi, my name is <b>Simon.</b></p>
-      </div>
-      <img alt='profile of person' className="profilephoto" src={`${process.env.PUBLIC_URL}/images/menobg.png`}></img>      
-      <div className="nameBox"><span className="firstName">Simon</span> <span className="lastName">Vargas</span></div>  
-
-      </div>
-        <div className="split-section__buttons">
-        <p className="solutionsEngineer">Solutions Engineer</p>
-         
-     <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://docs.google.com/document/d/1j7f1ArS_JaqL84lDpetM_cpL792jFoym/edit"
-          className="btn">
-          Resume
-        </a>
+      
+      <div ref={homeRef} id="home" className={styles.splitSection}>
+      <div className={styles.topColorBar}></div>
+        <div className={styles.splitSectionContent}>
+          <div className={styles.splitSectionText}>
+            <p>
+              Hi, my name is <b>Simon.</b>
+            </p>
+          </div>
+          <img
+            alt="profile of person"
+            className={styles.profilephoto}
+            src={`${process.env.PUBLIC_URL}/images/menobg.png`}
+          ></img>
+          <div className={styles.nameBox}>
+            <span className={styles.firstName}>Simon</span>{" "}
+            <span className={styles.lastName}>Vargas</span>
+          </div>
         </div>
-        <div class="scroll-button">
-  <span onClick={scrollToAboutMe} class="arrow">&#8595;</span>
-</div>
-       
-        
+        <div className={styles.splitSectionButtons}>
+          <p className={styles.solutionsEngineer}>Solutions Engineer</p>
+        </div>
+        <div class={styles.scrollButton}>
+          <span onClick={scrollToAboutMe} class={styles.arrow}>
+            &#8595;
+          </span>
+        </div>
       </div>
-     </motion.div>
+    </motion.div>
   );
 }
 

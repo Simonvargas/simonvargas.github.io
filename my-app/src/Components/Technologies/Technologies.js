@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, {  useContext } from "react";
 import "./Technologies.css";
 import { ScrollContext } from  "../../Context/Context";
 

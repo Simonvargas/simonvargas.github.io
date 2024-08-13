@@ -9,12 +9,10 @@ nav {
     z-index: 1000;
     top: 0;
    left: 0; 
-  /* border-radius: 12px; */
-  /* box-shadow: 0 3px 16px rgba(0, 0, 0, 0.2); */
-  /* background-color: rgba(59, 130, 246, 0.5); */
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  
   }
   
 .links {
@@ -35,7 +33,6 @@ nav {
     text-transform: uppercase;
     cursor: pointer;
     transition: color 0.3s ease, text-decoration-thickness 0.3s ease;
-    opacity: 0;
     transform: translateY(20px); /* Start slightly below */
     animation: popUpImage 1.5s forwards;
     animation-delay: .1s; /* Delay for the image to pop up after text is done */
@@ -60,6 +57,7 @@ nav {
     transform-origin: bottom left; /* Animation direction */
     color:  black;
   }
+  
   .links::after {
     content: '';
     position: absolute;
@@ -73,13 +71,127 @@ nav {
     transform: scaleX(0); /* Hide by default */
     transform-origin: bottom right; /* Animation direction */
   }
+  .btnContainer {
+    display: none;
+  }
+  .navBtn {
+    position: relative;
+    top: 1rem;
+  }
 
-  
+  .exitBtn {
+    display: none;
+  }
+ 
+
+  @keyframes popUpImage {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Slightly below its final position */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Final position */
+    }
+  }
+
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+      transform: translateX(0); /* End at the right edge of the viewport */
+    }
+  }
+
+  @keyframes slideOutToRight {
+    0% {
+      transform: translateX(0); /* Start at the right edge of the viewport */
+    }
+    100% {
+      transform: translateX(100%); /* Slide off-screen to the right */
+    }
+  }
   
   @media (max-width: 768px) {
     nav {
-      display: none;
+      display: none; 
+      background-color: white; /* Ensuring background color */
+      height: 100vh; /* Full viewport height */
+      width: 100vw; /* Full viewport width */
+      top: 0;
+      left: 0;
+      justify-content: center; /* Center items horizontally */
+      align-items: center; /* Center items vertically */
+      flex-direction: column; /* Stack links vertically */
+      position: fixed; /* Fixed position to cover entire screen */
+      z-index: 1000; /* Ensure it appears above other elements */
+      padding: 0;
+      transition: right 0.3s ease;
+     
     }
+    nav.open {
+      display: flex;
+      animation: slideInFromRight 0.3s ease forwards;
+    }
+
+    nav.closing {
+      animation: slideOutToRight 0.3s ease forwards; /* Apply slide-out animation */
+    }
+
+    .links {
+      margin: 0; /* Remove margin */
+    padding: 1rem 0; /* Adjust padding */
+    }
+    .btnContainer {
+      display: flex;
+      align-items: end;
+      justify-content: end;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      
+      
+    }
+    .navBtn {
+    position: relative;
+     width: 35px;
+     height: 35px;
+     z-index: 1001;
+     --tw-bg-opacity: 1;
+    background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+    border-radius: 2rem;
+    padding: .375rem
+    }
+
+    header {
+      position: absolute; /* Absolutely position the nav within the splash page */
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000; /* Ensure it is above other content */
+    }
+    .links {
+      animation: none;
+      font-size: 1.4rem;
+      line-height: 2;
+
+    }
+
+    .exitBtn {
+      position: absolute;
+      top: 4rem; /* Adjust as needed */
+      right: 1.5rem; /* Adjust as needed */
+      width: 90px;
+      height: 70px;
+      text-align: end;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      
+    }
+
   }
 
  

@@ -8,6 +8,7 @@ const images = [
   `${process.env.PUBLIC_URL}/images/chimera5.png`, 
   `${process.env.PUBLIC_URL}/images/chimera6.png`, 
 ];
+
 const Chimera = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const intervalRef = useRef(null);
