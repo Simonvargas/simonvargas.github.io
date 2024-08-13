@@ -4,7 +4,7 @@ import "./Footer.css"
 function Footer() {
     return (
       <footer>
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <p>&copy; 2024 Simon Vargas. All rights reserved.</p>
         <p>
        
         </p>

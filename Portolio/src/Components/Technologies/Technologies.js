@@ -213,6 +213,122 @@ function Technologies() {
                     height="40"
                   />
                 </a>
+                <a href="https://github.com" target="_blank" rel="noreferrer">
+                  {" "}
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/github/github-original.svg"
+                    alt="aws"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+                <a href="https://jira.com" target="_blank" rel="noreferrer">
+                  {" "}
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/jira/jira-original.svg"
+                    alt="aws"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+                <a href="https://salesforce.com" target="_blank" rel="noreferrer">
+                  {" "}
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/salesforce/salesforce-original.svg"
+                    alt="aws"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+                <a href="https://drive.com" target="_blank" rel="noreferrer">
+                  {" "}
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/googlecloud/googlecloud-original.svg"
+                    alt="aws"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+                <a href="https://snowflake.com" target="_blank" rel="noreferrer">
+                  {" "}
+                  <img
+                    src="https://avatars.githubusercontent.com/u/6453780?s=200&v=4"
+                    alt="aws"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a href="https://www.linux.com/what-is-linux/" target="_blank" rel="noreferrer">
+                  {" "}
+                  <img
+                    src="https://www.svgrepo.com/show/3968/linux.svg"
+                    alt="aws"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a href="https://www.atlassian.com/software/confluence" target="_blank" rel="noreferrer">
+                  {" "}
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/confluence/confluence-original.svg"
+                    alt="aws"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a href="https://www.microsoft.com/en-us/microsoft-365/excel" target="_blank" rel="noreferrer">
+                  {" "}
+                  <img
+                    src="https://img.icons8.com/?size=100&id=117561&format=png&color=000000"
+                    alt="aws"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a href="https://cloud.google.com/looker?hl=en" target="_blank" rel="noreferrer">
+                  {" "}
+                  <img
+                    src="https://img.icons8.com/?size=100&id=SruJhzn0nnLl&format=png&color=000000"
+                    alt="aws"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a href="https://app.powerbi.com/singleSignOn?ru=https%3A%2F%2Fapp.powerbi.com%2F%3FnoSignUpCheck%3D1" target="_blank" rel="noreferrer">
+                  {" "}
+                  <img
+                    src="https://img.icons8.com/?size=100&id=3sGOUDo9nJ4k&format=png&color=000000"
+                    alt="aws"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a href="https://www.databricks.com/" target="_blank" rel="noreferrer">
+                  {" "}
+                  <img
+                    src="https://avatars.githubusercontent.com/u/4998052?s=200&v=4"
+                    alt="aws"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+
+                <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
+                  {" "}
+                  <img
+                    src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/vscode/vscode-original.svg"
+                    alt="aws"
+                    width="40"
+                    height="40"
+                  />
+                </a>
+                
               </ul>
           </div>
       </div>
