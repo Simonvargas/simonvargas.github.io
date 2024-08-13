@@ -67,6 +67,7 @@ const Projects = () => {
       <div className="bigContainer">
         <section className="projectsSection">
           <h2 className="h2Projects">Projects</h2>
+           
             <a
               href="https://github.com/simonvargas/HeirBnB"
               target="_blank"
@@ -94,13 +95,11 @@ const Projects = () => {
               rel="noreferrer"
             >
               <div className="projectCard">
-                <div className="imageContainer">
                   <img
                     className="projectImg1"
                     src={`${process.env.PUBLIC_URL}/images/chimera1.png`}
                     alt="Chimera project"
                   ></img>
-                </div>
                 <div className="textContainer">
                   <h3>Chimera</h3>
                   <p>Crowdfunding Platform</p>
@@ -117,13 +116,11 @@ const Projects = () => {
               rel="noreferrer"
             >
               <div className="projectCard">
-                <div className="imageContainer">
                   <img
                     className="projectImg1"
                     src={`${process.env.PUBLIC_URL}/images/sneax1.png`}
                     alt="Snea Project project"
                   ></img>
-                </div>
                 <div className="textContainer">
                   <h3>Sneax</h3>
                   <p>Investment Trading</p>
@@ -140,13 +137,11 @@ const Projects = () => {
               rel="noreferrer"
             >
               <div className="projectCard">
-                <div className="imageContainer">
                   <img
                     className="projectImg1"
                     src={`${process.env.PUBLIC_URL}/images/feelbrite3.png`}
                     alt="FeelBrite project"
                   ></img>
-                </div>
                 <div className="textContainer">
                   <h3>FeelBrite</h3>
                   <p>Enrollment and Scheduling Platform</p>
@@ -163,13 +158,11 @@ const Projects = () => {
               rel="noreferrer"
             >
               <div className="projectCard">
-                <div className="imageContainer">
                   <img
                     className="projectImg1"
                     src={`${process.env.PUBLIC_URL}/images/FiveCent.png`}
                     alt="FiveCents Splash"
                   ></img>
-                </div>
                 <div className="textContainer">
                   <h3>FiveCents</h3>
                   <p>Business Review Platform</p>
