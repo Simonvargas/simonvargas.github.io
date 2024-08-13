@@ -35,7 +35,7 @@ function Header() {
       document.body.classList.remove('nav-open');
       setNavOpen(false);
       setIsClosing(false);
-    }, 300); // Match the duration of the closing animation
+    }, 300); 
   };
 
   const toggleNav = () => {
