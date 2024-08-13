@@ -12,7 +12,6 @@ nav {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  
   }
   
 .links {
@@ -128,11 +127,20 @@ nav {
       z-index: 1000; /* Ensure it appears above other elements */
       padding: 0;
       transition: right 0.3s ease;
+      
      
     }
     nav.open {
+
       display: flex;
-      animation: slideInFromRight 0.3s ease forwards;
+      overflow: hidden;
+      height: 100vh;
+      width: 100vw;
+    }
+    
+    /* Alternatively, apply to the body when nav is open */
+    body.nav-open {
+      overflow: hidden;
     }
 
     nav.closing {
@@ -142,6 +150,7 @@ nav {
     .links {
       margin: 0; /* Remove margin */
     padding: 1rem 0; /* Adjust padding */
+    
     }
     .btnContainer {
       display: flex;
@@ -170,12 +179,13 @@ nav {
       left: 0;
       width: 100%;
       z-index: 1000; /* Ensure it is above other content */
+      
     }
     .links {
       animation: none;
       font-size: 1.4rem;
       line-height: 2;
-
+      
     }
 
     .exitBtn {
@@ -191,6 +201,8 @@ nav {
 
       
     }
+
+  
 
   }
 
