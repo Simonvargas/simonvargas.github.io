@@ -26,15 +26,17 @@ function Splash() {
         <div className={styles.topColorBar}></div>
         <div className={styles.splitSectionContent}>
           <div className={styles.splitSectionText}>
-            <p>
-              Hi, my name is <b>Simon.</b>
-            </p>
-          </div>
           <img
             alt="profile of person"
             className={styles.profilephoto}
             src={`${process.env.PUBLIC_URL}/images/menobg.png`}
           ></img>
+            <b>
+              Simon Vargas
+            </b>
+            <p> I'm a web developer/Solutions Engineer based in the US.</p>
+          </div>
+          
           <div className={styles.nameBox}>
             <span className={styles.firstName}>Simon</span>{" "}
             <span className={styles.lastName}>Vargas</span>

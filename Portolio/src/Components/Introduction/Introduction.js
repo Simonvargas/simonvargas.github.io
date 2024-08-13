@@ -10,7 +10,9 @@ function Introduction() {
   return (
     
     <section ref={aboutMeRef} class={styles.aboutMe} id="about-me">
-     
+      <div className={styles.imgDiv}>
+    
+          </div>
         <h2>Welcome to my Portfolio!</h2>
         <p>
           From a young age, computers have been an intrinsic part of my life.
