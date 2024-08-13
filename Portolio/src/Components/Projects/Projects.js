@@ -98,7 +98,7 @@ const Projects = () => {
                   <img
                     className="projectImg1"
                     src={`${process.env.PUBLIC_URL}/images/chimera1.png`}
-                    alt="Heirbnb project"
+                    alt="Chimera project"
                   ></img>
                 </div>
                 <div className="textContainer">
@@ -121,7 +121,7 @@ const Projects = () => {
                   <img
                     className="projectImg1"
                     src={`${process.env.PUBLIC_URL}/images/sneax1.png`}
-                    alt="Heirbnb project"
+                    alt="Snea Project project"
                   ></img>
                 </div>
                 <div className="textContainer">
@@ -143,8 +143,8 @@ const Projects = () => {
                 <div className="imageContainer">
                   <img
                     className="projectImg1"
-                    src={`${process.env.PUBLIC_URL}/images/FeelBrite1.png`}
-                    alt="Heirbnb project"
+                    src={`${process.env.PUBLIC_URL}/images/feelbrite3.png`}
+                    alt="FeelBrite project"
                   ></img>
                 </div>
                 <div className="textContainer">
@@ -167,7 +167,7 @@ const Projects = () => {
                   <img
                     className="projectImg1"
                     src={`${process.env.PUBLIC_URL}/images/FiveCent.png`}
-                    alt="Heirbnb project"
+                    alt="FiveCents Splash"
                   ></img>
                 </div>
                 <div className="textContainer">
