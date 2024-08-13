@@ -12,8 +12,8 @@
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  --tw-bg-opacity: 1;
-  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+  /* --tw-bg-opacity: 1;
+  background-color: rgba(249, 250, 251, var(--tw-bg-opacity)); */
 }
 
 /* Heading style */

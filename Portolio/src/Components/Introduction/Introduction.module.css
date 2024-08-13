@@ -5,10 +5,10 @@
   width: 100%; /* Full width of its container */
   box-sizing: border-box; /* Ensure padding is included in the width */
   box-shadow: 0 4px 8px #0000001a; /* Subtle shadow for depth */
-  /* background-color: #222831; */
-  background-color: #c3cbdc;
-background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
-color: black;
+  background-color: #222831;
+  /* background-color: #c3cbdc;
+background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%); */
+color: white;
 
 
 }
@@ -17,6 +17,7 @@ color: black;
 .aboutMe h2 {
   font-family: 'Georgia', serif; /* Elegant serif font */
   font-size: 4.5rem; /* Large heading size */
+  text-align: center;
 }
 
 /* Paragraph styles */
