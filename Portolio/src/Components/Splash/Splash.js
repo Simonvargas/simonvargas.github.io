@@ -14,14 +14,14 @@ function Splash() {
   };
 
   return (
-    <motion.div
-      ref={homeRef}
-      id="home"
-      className={styles.splitSection}
-      initial={{ y: "-100%", opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-    >
+    // <motion.div
+    //   ref={homeRef}
+    //   id="home"
+    //   className={styles.splitSection}
+    //   initial={{ y: "-100%", opacity: 0 }}
+    //   animate={{ y: 0, opacity: 1 }}
+    //   transition={{ duration: 1, ease: "easeOut" }}
+    // >
       <div ref={homeRef} id="home" className={styles.splitSection}>
         <div className={styles.topColorBar}></div>
         <div className={styles.splitSectionContent}>
@@ -81,7 +81,7 @@ function Splash() {
           </span>
         </div>
       </div>
-     </motion.div>
+    //  </motion.div>
   );
 }
 

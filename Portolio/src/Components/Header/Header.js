@@ -2,6 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import "./Header.css";
 import { ScrollContext } from "../../Context/Context";
 
+
 function Header() {
   const {
     homeRef,
@@ -59,6 +60,8 @@ function Header() {
       openNav();
     }
   };
+
+
 
   return (
     <header>
