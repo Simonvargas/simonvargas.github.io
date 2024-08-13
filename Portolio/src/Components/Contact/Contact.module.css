@@ -1,0 +1,44 @@
+.contact {
+  padding: 4rem; /* Increase padding for a more prominent section */
+  /* transform: scale(1.2); Scale up the entire section */
+}
+
+
+.contact h3,
+.contact p,
+.contact span {
+  font-size: 1.5rem; /* Increase font size for better readability */
+}
+
+.iconContainer {
+  display: flex;
+  gap: 2rem; 
+  align-items: center; 
+}
+
+.icon {
+  width: 70px; 
+  height: 70px; 
+}
+
+.icon:hover {
+  border-bottom-color: transparent;
+  fill: #92dfab;
+}
+
+.contact h1 {
+font-size: 2.5rem;
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+  .contact {
+    padding: 2rem; 
+  }
+
+  .contact h3,
+  .contact p,
+  .contact span {
+    font-size: 1.2rem; 
+  }
+}
