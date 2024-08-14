@@ -184,7 +184,7 @@ display: none;
 /* Adjustments for mobile screens */
 @media (max-width: 768px) {
   .splitSection {
-    height: 85vh; /* Allow height to adjust based on content */
+    height: 90vh; /* Allow height to adjust based on content */
     margin-top: 0; /* Remove top margin */
     display: flex; /* Use flexbox layout */
     flex-direction: column; /* Stack children vertically */
@@ -236,6 +236,13 @@ display: none
     width: 200px; /* Smaller profile photo for mobile */
     height: 250px; /* Maintain aspect ratio for profile photo */
     padding: 1rem;
+    background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateY(20px); 
+  animation: popUpImage 1.5s forwards;
+  animation-delay: 1s; 
   }
 
   .splitSectionButtons {
