@@ -1,4 +1,10 @@
-nav {
+header {
+  position: relative;
+  display: none;
+}
+
+
+#navbar1 {
   background-color: white;
     color: white;
     padding: 1rem;
@@ -115,7 +121,11 @@ nav {
   }
   
   @media (max-width: 768px) {
-    nav {
+
+    header {
+      display: block;
+    }
+    #navbar1 {
       display: none; 
       background-color: white; /* Ensuring background color */
       height: 100vh; /* Full viewport height */
@@ -131,7 +141,7 @@ nav {
       transition: right 0.3s ease;
      
     }
-    nav.open {
+    #navbar1.open {
 
       display: flex;
       overflow: hidden;
@@ -145,7 +155,7 @@ nav {
       overflow: hidden;
     }
 
-    nav.closing {
+    #navbar1.closing {
       animation: slideOutToRight 0.3s ease forwards; /* Apply slide-out animation */
     }
 

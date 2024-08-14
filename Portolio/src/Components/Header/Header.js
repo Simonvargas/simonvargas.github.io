@@ -66,7 +66,7 @@ function Header() {
   return (
     <header>
       
-      <nav className={`${navOpen ? "open" : ""} ${isClosing ? "closing" : ""}`}>
+      <nav id='navbar1' className={`${navOpen ? "open" : ""} ${isClosing ? "closing" : ""}`}>
       <svg
         onClick={closeNav}
           className="exitBtn"
