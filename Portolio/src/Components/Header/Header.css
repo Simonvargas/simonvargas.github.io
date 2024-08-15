@@ -149,7 +149,7 @@ header {
       width: 100vw;
       animation: slideInFromRight 0.3s ease forwards;
     }
-    
+   
     /* Alternatively, apply to the body when nav is open */
     body.nav-open {
       overflow: hidden;
@@ -162,7 +162,8 @@ header {
     .links {
       margin: 0; /* Remove margin */
     padding: 1rem 0; /* Adjust padding */
-    
+    position: relative;
+    bottom: 3rem;
     
     
     }
@@ -233,6 +234,8 @@ header {
       display: block;
       width: 54px;
       height: 54px;
+      position: relative;
+      bottom: 2rem;
  
     }
 
