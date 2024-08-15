@@ -31,14 +31,14 @@ padding-right: 7rem;
 /* Heading style */
 .aboutMe h2 {
   font-family: 'Georgia', serif; /* Elegant serif font */
-  font-size: 3.8rem; /* Large heading size */
+  font-size: 3rem; /* Large heading size */
   text-align: center;
 }
 
 /* Paragraph styles */
 .aboutMe p {
   font-family: 'Arial', sans-serif; /* Clean sans-serif font */
-  font-size: 1.8rem; /* Slightly larger font size for readability */
+  font-size: 1.7rem; /* Slightly larger font size for readability */
   line-height: 1.6; /* Increased line height for better readability */
   margin-bottom: 3rem; 
 }

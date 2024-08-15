@@ -184,11 +184,12 @@ display: none;
 /* Adjustments for mobile screens */
 @media (max-width: 768px) {
   .splitSection {
-    height: 90vh; /* Allow height to adjust based on content */
+    height: 85vh; /* Allow height to adjust based on content */
     margin-top: 0; /* Remove top margin */
     display: flex; /* Use flexbox layout */
     flex-direction: column; /* Stack children vertically */
     align-items: center; /* Center children horizontally if needed */
+    padding: 1rem;
   }
 
   .scrollButton {

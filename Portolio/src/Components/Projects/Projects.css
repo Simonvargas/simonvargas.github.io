@@ -138,7 +138,7 @@
 /* Adjustments for mobile screens */
 @media (max-width: 768px) {
   .projectContainer {
-    display: none;
+    /* display: none; */
   }
 
   /* Style for the bigContainer to center its content */

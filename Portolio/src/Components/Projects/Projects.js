@@ -1,10 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ScrollContext } from "../../Context/Context";
 import "./Projects.css";
-import HeirBnB from "./HeirBnB";
-import Chimera from "./Chimera";
-import Sneax from "./Sneax";
-import FeelBrite from "./FeelBrite";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState("HeirBnB");
@@ -13,20 +9,7 @@ const Projects = () => {
     setSelectedProject(projectName);
   };
 
-  const renderProjectDetails = () => {
-    switch (selectedProject) {
-      case "HeirBnB":
-        return <HeirBnB />;
-      case "Chimera":
-        return <Chimera />;
-      case "Sneax":
-        return <Sneax />;
-      case "FeelBrite":
-        return <FeelBrite />;
-      default:
-        return null;
-    }
-  };
+
 
   const { projectsRef } = useContext(ScrollContext);
 
@@ -34,36 +17,7 @@ const Projects = () => {
 
   return (
     <div ref={projectsRef} id="projects">
-      <section className="projectContainer" id="projects">
-        <div className="sidebarContainer">
-          <h2>Projects</h2>
-          <button
-            className={`h2 ${selectedProject === "HeirBnB" ? "active" : ""}`}
-            onClick={() => handleProjectClick("HeirBnB")}
-          >
-            HeirBnB
-          </button>
-          <button
-            className={`h2 ${selectedProject === "Chimera" ? "active" : ""}`}
-            onClick={() => handleProjectClick("Chimera")}
-          >
-            Chimera
-          </button>
-          <button
-            className={`h2 ${selectedProject === "Sneax" ? "active" : ""}`}
-            onClick={() => handleProjectClick("Sneax")}
-          >
-            Sneax
-          </button>
-          <button
-            className={`h2 ${selectedProject === "FeelBrite" ? "active" : ""}`}
-            onClick={() => handleProjectClick("FeelBrite")}
-          >
-            FeelBrite
-          </button>
-        </div>
-        <div className="projectDetails">{renderProjectDetails()}</div>
-      </section>
+    
 
       <div className="bigContainer">
         <section className="projectsSection">
