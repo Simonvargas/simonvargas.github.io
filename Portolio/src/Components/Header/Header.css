@@ -124,6 +124,7 @@ header {
 
     header {
       display: block;
+    
     }
     #navbar1 {
       display: none; 
@@ -139,6 +140,8 @@ header {
       z-index: 1000; /* Ensure it appears above other elements */
       padding: 0;
       transition: right 0.3s ease;
+      position: relative;
+      bottom: 2rem;
      
     }
     #navbar1.open {
@@ -231,7 +234,7 @@ header {
       width: 54px;
       height: 54px;
       position:relative;
-      top: 2rem
+      top: .5rem;
     }
 
   
