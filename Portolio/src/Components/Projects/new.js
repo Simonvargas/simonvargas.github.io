@@ -10,13 +10,13 @@ const New = () => {
     const projects = [
         {
           title: 'Chimera',
-          description: 'Travel Lodging Platform',
+          description: 'Crowdfunding Platform',
           image: `${process.env.PUBLIC_URL}/images/chimera1.png`, 
           githubUrl: 'https://github.com/simonvargas/chimera',
         },
         {
           title: 'HeirBnB',
-          description: 'Crowdfunding Platform',
+          description:'Travel Lodging Platform',
           image:  `${process.env.PUBLIC_URL}/images/heirbnb1.png`,
           githubUrl: 'https://github.com/simonvargas/HeirBnB',
         },
