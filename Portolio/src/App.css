@@ -25,6 +25,8 @@ body.night-mode .splitSection {
   --card-background: white;
   --card-color: black;
   --border-color: 8px solid black;
+  --filter: none;
+  --filter1: none;
 
 }
 
@@ -42,6 +44,7 @@ body.night-mode {
   --card-background: white;
   --card-color: black;
   --border-color: 8px solid white;
+  --filter1: invert(100%) brightness(1000%);
 }
 
 .separator {

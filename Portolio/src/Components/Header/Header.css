@@ -127,7 +127,7 @@ header {
     }
     #navbar1 {
       display: none; 
-      background-color: white; /* Ensuring background color */
+      background-color: vwhite; /* Ensuring background color */
       height: 100vh; /* Full viewport height */
       width: 100vw; /* Full viewport width */
       top: 0;
@@ -202,6 +202,9 @@ header {
       
     }
 
+   
+
+
     .exitBtn {
       position: absolute;
       top: 4rem; /* Adjust as needed */
@@ -230,6 +233,7 @@ header {
       display: block;
       width: 54px;
       height: 54px;
+ 
     }
 
   

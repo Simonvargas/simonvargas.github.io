@@ -11,14 +11,13 @@ const Projects = () => {
 
 
 
-  const { projectsRef } = useContext(ScrollContext);
+  const { projectsRefMobile } = useContext(ScrollContext);
 
   
 
   return (
-    <div ref={projectsRef} id="projects">
+    <div ref={projectsRefMobile} id="projectsMobile">
     
-
       <div className="bigContainer">
         <section className="projectsSection">
           <h2 className="h2Projects">Projects</h2>

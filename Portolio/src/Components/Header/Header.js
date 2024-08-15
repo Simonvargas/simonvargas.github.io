@@ -9,6 +9,7 @@ function Header() {
     homeRef,
     aboutMeRef,
     projectsRef,
+    projectsRefMobile,
     technologiesRef,
     contactRef,
     activeLink,
@@ -97,8 +98,8 @@ function Header() {
           About Me
         </a>
         <a
-          className={`links ${activeLink === "projects" ? "active" : ""}`}
-          onClick={() => scrollToSection(projectsRef, "projects")}
+          className={`links ${activeLink === "projectsMobile" ? "active" : ""}`}
+          onClick={() => scrollToSection(projectsRefMobile, "projectsMobile")}
         >
           Projects
         </a>
