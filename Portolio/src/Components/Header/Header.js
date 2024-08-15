@@ -123,7 +123,7 @@ function Header() {
         >
           Resume
         </a>
-        <button className='btn123' onClick={toggleNightMode}>
+       <button className='btn123' onClick={toggleNightMode}>
         {isNightMode ? <img className='icon123' src='https://www.reshot.com/preview-assets/icons/GMT2U6WQE5/sun-GMT2U6WQE5.svg'></img> : <img className='icon123' src='https://www.reshot.com/preview-assets/icons/SD4ENBAV8K/moon-crescent-SD4ENBAV8K.svg'></img>}
       </button>
       </nav>
