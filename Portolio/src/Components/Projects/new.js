@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext, useRef } from "react";
 import { ScrollContext } from "../../Context/Context";
 import styles from "./newProject.module.css";
+import {motion, useInView, useAnimation, useIsPresent } from "framer-motion"
 
 
 const New = () => {
@@ -38,15 +39,44 @@ const New = () => {
             githubUrl: 'https://github.com/simonvargas/FiveCents',
           },
       ];
-      
+      const ref = useRef(null)
+      const isInView = useInView(ref, { threshold: 0.25, triggerOnce: true });
+      const mainControls = useAnimation()
+    
+      useEffect(() => {
+        if (isInView) {
+          mainControls.start('visible')
+        }
+      }, [isInView])
+    
+      const preloadImage = (src) => {
+        const img = new Image();
+        img.src = src;
+    };
+    
+    useEffect(() => {
+        projects.forEach(project => {
+            preloadImage(project.image);
+        });
+    }, []);
     
   return (
     <div ref={projectsRef} id="projects" className={styles.projectsSection}>
+           {/* <motion.div
+      variants={{
+        hidden: {opacity: 0, y:75},
+        visible: {opacity: 1, y:0},
+      }}
+      initial="hidden"
+      animate={mainControls}
+      transition={{duration: 0.3, delay: .5}}
+      > */}
+      <div ref={ref}>
     <h2 className={styles.sectionTitle}>My Projects</h2>
     <div className={styles.grid}>
       {projects.map((project, index) => (
         <div key={index} className={styles.projectCard}>
-          <img src={project.image} alt={project.title} className={styles.projectImage} />
+          <img loading="lazy" src={project.image} alt={project.title} className={styles.projectImage} />
           <div className={styles.projectContent}>
           <div className={styles.projectTitle}>
                 {project.title}
@@ -61,6 +91,8 @@ const New = () => {
         </div>
       ))}
     </div>
+    </div>
+    {/* </motion.div> */}
   </div>
   );
 };

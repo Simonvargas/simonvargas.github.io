@@ -1,18 +1,38 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
 import { ScrollContext } from "../../Context/Context";
 import styles from "./Introduction.module.css";
+import {motion, useInView, useAnimation, useIsPresent } from "framer-motion"
 
 
 function Introduction() {
   const { aboutMeRef } = useContext(ScrollContext);
 
+  const ref = useRef(null)
+  const isInView = useInView(ref, { threshold: 0.25, triggerOnce: true });
+  const mainControls = useAnimation()
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start('visible')
+    }
+  }, [isInView])
+
 
   return (
     
     <section ref={aboutMeRef} class={styles.aboutMe} id="about-me">
-      <div className={styles.imgDiv}>
+      {/* <motion.div
+      variants={{
+        hidden: {opacity: 0, y:75},
+        visible: {opacity: 1, y:0},
+      }}
+      initial="hidden"
+      animate={mainControls}
+      transition={{duration: 0.3, delay: .4}}
+      > */}
+      <div ref={ref}>
     
-          </div>
+          
         <h2>Welcome to my Portfolio!</h2>
         <p>
           From a young age, computers have been an intrinsic part of my life.
@@ -34,6 +54,8 @@ function Introduction() {
           I'm thrilled to have you here, and I can't wait to share my work with
           you. Let's embark on this journey together!
         </p>
+        </div>
+        {/* </motion.div> */}
     </section>
   );
 }

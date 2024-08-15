@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   margin-left: 60px;
+  scroll-behavior: smooth;
 }
 body.night-mode .splitSection {
   background-color: black;
