@@ -3,6 +3,8 @@
   footer {
     text-align: center;
     padding: 1rem;
+    background-color: var(--splash-background);
+  color: var(--text-color);
   }
   
   

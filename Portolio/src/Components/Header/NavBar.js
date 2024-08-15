@@ -1,29 +1,12 @@
 import React, { useEffect, useState, useContext } from "react";
 import styles from "./sidebar.module.css";
+import { NightModeContext} from "../../Context/NightMode";
 import { motion } from 'framer-motion';
 
 
 function NavBar() {
-  const [isNightMode, setIsNightMode] = useState(false);
+  const { isNightMode, toggleNightMode } = useContext(NightModeContext);
 
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "night") {
-      setIsNightMode(true);
-      document.body.classList.add("night-mode");
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    setIsNightMode(!isNightMode);
-    if (!isNightMode) {
-      document.body.classList.add("night-mode");
-      localStorage.setItem("theme", "night");
-    } else {
-      document.body.classList.remove("night-mode");
-      localStorage.setItem("theme", "day");
-    }
-  };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -102,6 +85,9 @@ function NavBar() {
         </motion.a>
       </div>
       <div className={styles.resumeDiv}>
+      <button className={styles.btn} onClick={toggleNightMode}>
+        {isNightMode ? <img className={styles.icon1} src='https://www.reshot.com/preview-assets/icons/GMT2U6WQE5/sun-GMT2U6WQE5.svg'></img> : <img className={styles.icon1} src='https://www.reshot.com/preview-assets/icons/SD4ENBAV8K/moon-crescent-SD4ENBAV8K.svg'></img>}
+      </button>
         <a
           target="_blank"
           rel="noreferrer"

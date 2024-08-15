@@ -1,16 +1,18 @@
 
 .aboutMe {
   color: white; 
-  padding: 4rem;
+  padding: 8rem;
   width: 100%; 
   box-sizing: border-box;
   box-shadow: 0 4px 8px #0000001a; 
-  /* background-color: #222831; */
-  background-color: #c3cbdc;
-background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
-color: black;
-padding-left: 7rem;
-padding-right: 7rem;
+  /* background-color: var(--gradient-color);
+  background-image: var(--gradient-background); */
+  color: var(--text-color);
+  /* background-color: #c3cbdc;
+background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%); */
+
+background-color: var(--splash-background);
+color: var(--text-color);
 }
 
 .imgDiv {

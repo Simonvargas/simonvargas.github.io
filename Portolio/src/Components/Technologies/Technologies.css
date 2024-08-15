@@ -9,8 +9,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* --tw-bg-opacity: 1;
   background-color: rgba(17,24,39,var(--tw-bg-opacity));  */
-background-color: #c3cbdc;
-background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
+/* background-color: var(--gradient-color);
+background-image: var(--gradient-background); */
+background-color: var(--splash-background);
+color: var(--text-color);
+
+
   }
   .content {
     flex: 0 0 20%; 
@@ -37,7 +41,7 @@ background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
     height: 100px;
     width: 100px;
     margin: 5px;
-    /* filter: invert(100%) brightness(150%); */
+    filter: var(--filter);
   }
 
   #technologies ul.badges {

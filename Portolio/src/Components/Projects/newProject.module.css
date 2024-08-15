@@ -1,10 +1,10 @@
 .projectsSection {
     /* padding: 80px 20px; */
-    color: black; /* Text color */
+    /* color: black;  */
+    background-color: var(--splash-background);
+  color: var(--text-color);
     text-align: start;
     padding: 9rem;
-    position: relative;
-    bottom: 1rem;
   }
   
   .sectionTitle {
@@ -53,7 +53,8 @@
   
   .projectContent {
     padding: 20px;
-    background-color: inherit;
+    background-color: var(--card-background);
+    color: var(--card-color)
     
   }
   

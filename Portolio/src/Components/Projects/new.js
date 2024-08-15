@@ -47,7 +47,7 @@ const New = () => {
       {projects.map((project, index) => (
         <div key={index} className={styles.projectCard}>
           <img src={project.image} alt={project.title} className={styles.projectImage} />
-          <div className={styles.projectContent} style={{ backgroundColor: project.bgColor }}>
+          <div className={styles.projectContent}>
           <div className={styles.projectTitle}>
                 {project.title}
                 <a href={project.githubUrl} target="_blank" rel="noreferrer">

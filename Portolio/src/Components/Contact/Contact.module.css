@@ -1,5 +1,7 @@
 .contact {
   padding: 4rem; /* Increase padding for a more prominent section */
+  background-color: var(--splash-background);
+  color: var(--text-color);
 }
 
 
