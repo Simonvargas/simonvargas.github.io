@@ -208,8 +208,8 @@ header {
 
     .exitBtn {
       position: absolute;
-      top: 4rem; /* Adjust as needed */
-      right: 1.5rem; /* Adjust as needed */
+      top: 4rem; 
+      right: 1.5rem; 
       width: 90px;
       height: 70px;
       text-align: end;
