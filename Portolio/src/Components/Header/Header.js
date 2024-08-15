@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import "./Header.css";
 import { ScrollContext } from "../../Context/Context";
+import { NightModeContext} from "../../Context/NightMode";
 
 
 function Header() {
@@ -16,6 +17,8 @@ function Header() {
 
   const [navOpen, setNavOpen] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
+
+  const { isNightMode, toggleNightMode } = useContext(NightModeContext);
 
   const scrollToSection = (ref, section) => {
     setActiveLink(section);
@@ -120,7 +123,9 @@ function Header() {
         >
           Resume
         </a>
-      
+        <button className='btn123' onClick={toggleNightMode}>
+        {isNightMode ? <img className='icon123' src='https://www.reshot.com/preview-assets/icons/GMT2U6WQE5/sun-GMT2U6WQE5.svg'></img> : <img className='icon123' src='https://www.reshot.com/preview-assets/icons/SD4ENBAV8K/moon-crescent-SD4ENBAV8K.svg'></img>}
+      </button>
       </nav>
       <div className="btnContainer">
         <svg
@@ -137,6 +142,7 @@ function Header() {
             d="M4 6h16M4 12h8m-8 6h16"
           ></path>
         </svg>
+       
       </div>
     </header>
   );

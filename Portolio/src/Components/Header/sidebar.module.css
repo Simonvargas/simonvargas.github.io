@@ -140,10 +140,7 @@
     fill: #92dfab;
       /* filter: invert(100%) brightness(150%); */
   }
-  body.night-mode {
-    background-color: black !important;
-    color: white;
-  }
+
 
 
   @media (max-width: 768px) {

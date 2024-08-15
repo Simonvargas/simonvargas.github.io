@@ -4,7 +4,6 @@
   padding: 8rem;
   width: 100%; 
   box-sizing: border-box;
-  box-shadow: 0 4px 8px #0000001a; 
   /* background-color: var(--gradient-color);
   background-image: var(--gradient-background); */
   color: var(--text-color);
@@ -54,7 +53,6 @@ color: var(--text-color);
   .aboutMe {
     padding: 2rem 1rem; /* Reduce padding for mobile */
     height: auto; /* Allow height to adjust based on content */
-    border-radius: 0%;
     
 
   }

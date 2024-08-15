@@ -215,6 +215,24 @@ header {
 
       
     }
+    .btn123 {
+      display: block;
+      background: transparent; /* Remove background */
+      border: none; /* Remove border */
+      padding: 0; /* Remove default padding */
+      margin: 0; /* Remove default margin */
+      cursor: pointer; /* Make the button clickable */
+      display: inline-flex; /* Align the image properly within the button */
+      align-items: center; /* Center the image vertically */
+    }
+
+    .icon123 {
+      display: block;
+      width: 54px;
+      height: 54px;
+      position:relative;
+      top: 2rem
+    }
 
   
 

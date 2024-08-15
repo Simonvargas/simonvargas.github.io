@@ -23,6 +23,7 @@ body.night-mode .splitSection {
   --gradient-color: #c3cbdc;
   --card-background: white;
   --card-color: black;
+  --border-color: 8px solid black;
 
 }
 
@@ -39,6 +40,7 @@ body.night-mode {
   --gradient-color: #1a1a1a;;
   --card-background: white;
   --card-color: black;
+  --border-color: 8px solid white;
 }
 
 .separator {
@@ -56,7 +58,7 @@ body.night-mode {
   width: 100%;
   height: 1px; /* Thickness of the line */
   background-color: var(--text-color);
-  ;
+  --border-color: 8px solid white;
 }
 
 @media (max-width: 768px) {

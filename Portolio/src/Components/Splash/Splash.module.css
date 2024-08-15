@@ -211,7 +211,7 @@ display: none
 
   .solutionsEngineer {
     display: block;
-    color: black;
+    color: var(--text-color);
     text-align: center;
     margin: 0;
     font-size: 1.5rem;
@@ -256,18 +256,19 @@ display: none
   .nameBox {
     display: inline-block; /* Allows padding and border to fit around text */
     padding: 1.5rem 2rem; /* Adjust padding to make the box larger */
-    border: 8px solid black; /* White border */
+    border: var(--border-color); /* White border */
     border-radius: 8px; /* Optional: adds rounded corners to the box */
     /* color: #ffffff;  */
     text-align: center; /* Center text inside the box */
     font-size: 2rem; /* Increase font size for emphasis */
     font-weight: bold;
     text-transform: uppercase;
-    color: black;
+    color: var(--text-color);
     opacity: 0;
     transform: translateY(20px); /* Start slightly below */
     animation: popUpImage 1.5s forwards;
     animation-delay: 1s; /* Delay for the image to pop up after text is done */
+    
     
   }
 
@@ -336,7 +337,7 @@ display: none
   .arrow3 {
     display: block;
     font-size: 2.5rem; /* Increase the size of the arrow */
-    color: black; /* White color for the arrow */
+    color: var(--text-color);
     animation: bounce 2s infinite; /* Infinite bounce animation */
     transition: transform 0.2s ease;
   }

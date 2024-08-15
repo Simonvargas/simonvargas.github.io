@@ -29,6 +29,11 @@
   flex-direction: column;
   align-items: center;
   margin-left: 1rem;
+  
+}
+.h2Projects {
+  color: var(--text-color);
+
 }
 
 /* Button styles for project headings */
@@ -139,18 +144,20 @@
 @media (max-width: 768px) {
   .projectContainer {
     /* display: none; */
+    
   }
 
   /* Style for the bigContainer to center its content */
   .bigContainer {
     /* background-color: #222831; */
-    color: white;
+    color: var(--text-color);
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    background-color: var(--splash-background);
   }
 
   /* Center the projectsSection vertically and add gap */
@@ -162,7 +169,10 @@
     height: auto; /* Allow height to adjust based on content */
     padding: 0 1rem; 
     justify-content: center;
+    
   }
+
+  
 
 
 
@@ -230,6 +240,5 @@
     padding: 0;
     margin: 0;
     font-size: 2rem; /* Adjust font size if needed */
-    color: Black; /* Ensure heading is visible */
   }
 }
