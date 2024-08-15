@@ -19,7 +19,8 @@
 
 .icon {
   width: 70px; 
-  height: 70px; 
+  height: 70px;
+  filter: var(--filter1)
 }
 
 .icon:hover {
