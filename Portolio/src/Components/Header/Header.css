@@ -221,13 +221,13 @@ header {
     }
     .btn123 {
       display: block;
-      background: transparent; /* Remove background */
-      border: none; /* Remove border */
-      padding: 0; /* Remove default padding */
-      margin: 0; /* Remove default margin */
-      cursor: pointer; /* Make the button clickable */
-      display: inline-flex; /* Align the image properly within the button */
-      align-items: center; /* Center the image vertically */
+      background: transparent; 
+      border: none; 
+      padding: 0; 
+      margin: 0; 
+      cursor: pointer; 
+      display: inline-flex; 
+      align-items: center; 
     }
 
     .icon123 {
@@ -236,7 +236,6 @@ header {
       height: 54px;
       position: relative;
       bottom: 2rem;
- 
     }
 
   
