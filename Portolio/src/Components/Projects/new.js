@@ -76,7 +76,9 @@ const New = () => {
     <div className={styles.grid}>
       {projects.map((project, index) => (
         <div key={index} className={styles.projectCard}>
+          <div className={styles.projectBoard}>
           <img loading="lazy" src={project.image} alt={project.title} className={styles.projectImage} />
+          </div>
           <div className={styles.projectContent}>
           <div className={styles.projectTitle}>
                 {project.title}
