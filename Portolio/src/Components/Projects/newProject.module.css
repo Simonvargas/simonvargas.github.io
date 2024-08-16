@@ -62,6 +62,7 @@
     background-color: var(--card-background);
     color: var(--card-color);
     height: 5.3rem;
+    font-weight: bold;
     
   }
   
@@ -72,6 +73,14 @@
   align-items: center;
   font-weight: bold;
   }
+
+  .line {
+    flex-grow: 1; /* This will make the line take up remaining space */
+    height: 2px; /* Line thickness */
+    background-color: darkgray; /* Line color */
+    margin: 0 10px; /* Spacing around the line */
+  }
+
   
   .projectDescription {
     font-size: 1rem;
