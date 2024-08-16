@@ -28,6 +28,7 @@ body.night-mode .splitSection {
   --filter: none;
   --filter1: none;
   --project-description: gray;
+  --dots-color: black;
 
 }
 
@@ -47,6 +48,7 @@ body.night-mode {
   --border-color: 8px solid white;
   --filter1: invert(100%) brightness(1000%);
   --project-description: white;
+  --dots-color: white;
 }
 
 .separator {
@@ -65,6 +67,40 @@ body.night-mode {
   height: 1px; /* Thickness of the line */
   background-color: var(--text-color);
   --border-color: 8px solid white;
+}
+
+
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(100px);
+    opacity: 0;
+  }
+}
+
+.dot {
+  position: absolute;
+  width: 10px; /* Size of the dot */
+  height: 10px;
+  background-color: var(--dots-color); /* Dot color */
+  border-radius: 50%; /* Make it circular */
+  opacity: 0;
+  animation: float 8s infinite;
+}
+
+@keyframes move-background {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(-100px) translateY(-100px);
+  }
 }
 
 @media (max-width: 768px) {

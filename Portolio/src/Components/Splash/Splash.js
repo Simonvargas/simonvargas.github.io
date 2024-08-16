@@ -21,6 +21,7 @@ function Splash() {
     }
   };
 
+
   return (
     <div ref={homeRef} id="home" className={styles.splitSection}>
       <div className={styles.splitSectionContent}>
