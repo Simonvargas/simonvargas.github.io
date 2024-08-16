@@ -4,7 +4,6 @@
     background-color: var(--splash-background);
   color: var(--text-color);
     text-align: start;
-   
     padding: 5rem 20rem 5rem 20rem;
   }
   
@@ -128,7 +127,7 @@
   
   @media (max-width: 768px) {
     .projectsSection {
-      padding: 2rem 0 2rem 0;
+      padding: 5rem 0 5rem 0;
       width: 100%;
       height: auto;
     }
