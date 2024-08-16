@@ -37,10 +37,10 @@ function Splash() {
           <button className={styles.headingBtn}onClick={scrollToContact}>Contact</button>
         </div>
 
-        <div className={styles.nameBox}>
+        {/* <div className={styles.nameBox}>
           <span className={styles.firstName}>Simon</span>{" "}
           <span className={styles.lastName}>Vargas</span>
-        </div>
+        </div> */}
       </div>
       <div className={styles.splitSectionButtons}>
         <p className={styles.solutionsEngineer}>Solutions Engineer</p>

@@ -182,43 +182,50 @@ display: none;
 /* Adjustments for mobile screens */
 @media (max-width: 768px) {
   .splitSection {
-    height: 85vh; /* Allow height to adjust based on content */
+    height: 100%; /* Allow height to adjust based on content */
     margin-top: 0; /* Remove top margin */
     display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center children horizontally if needed */
+    flex-direction: column; 
+    align-items: center; 
     padding: 1rem;
+    padding-bottom: 3rem;
   }
 
   .scrollButton {
     top: 1rem;
   }
+
   .splitSectionText {
-    font-size: 1.5rem; /* Adjust font size for mobile */
-    /* color:rgb(84, 82, 82) */
+    font-size: 1.5rem; 
     margin-bottom: 0;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
   }
 
   .splitSection b {
-display: none
+/* display: none */
+font-size: 3rem;
   }
   .splitSectionText p {
-    display: none;
+    /* display: none; */
+  }
+
+  .heading {
+    display: block;
   }
 
   .solutionsEngineer {
-    display: block;
+    /* display: block;
     color: var(--text-color);
     text-align: center;
     margin: 0;
     font-size: 1.5rem;
     opacity: 0;
-    transform: translateY(20px); /* Start slightly below */
+    transform: translateY(20px); 
     animation: popUpImage 1.5s forwards;
-    animation-delay: 1s; /* Delay for the image to pop up after text is done */
+    animation-delay: 1s;  */
+    display: none;
     
   }
 
@@ -242,6 +249,7 @@ display: none
   transform: translateY(20px); 
   animation: popUpImage 1.5s forwards;
   animation-delay: 1s; 
+  margin: 0 auto;
   }
 
   .splitSectionButtons {
@@ -329,24 +337,22 @@ display: none
     position: absolute;
   }
   .arrow {
-    display: none;
+    /* display: none; */
   }
   .arrow2{ 
-    display: none;
+    /* display: none; */
   }
   .arrow3 {
-    display: block;
-    font-size: 2.5rem; /* Increase the size of the arrow */
+    /* display: block;
+    font-size: 2.5rem; 
     color: var(--text-color);
-    animation: bounce 2s infinite; /* Infinite bounce animation */
-    transition: transform 0.2s ease;
-  }
-
-  .heading {
+    animation: bounce 2s infinite; 
+    transition: transform 0.2s ease; */
     display: none;
   }
-  
+
+ 
   .headingBtn {
-display: none
+/* display: none */
   }
 }
