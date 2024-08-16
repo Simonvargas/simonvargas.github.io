@@ -60,7 +60,7 @@ color: var(--text-color);
     flex-direction: column; 
     height: 100%; 
     width: 100%; 
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 2em 0 4rem 0;
     overflow: none;
   }
   
@@ -89,6 +89,13 @@ color: var(--text-color);
   #technologies ul.badges a img {
     height: 60px; 
     width: 60px; 
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+  }
+
+  #technologies ul.badges {
+    justify-content: center;
   }
   
 }

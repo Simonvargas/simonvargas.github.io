@@ -29,6 +29,8 @@ body.night-mode .splitSection {
   --filter1: none;
   --project-description: gray;
   --dots-color: black;
+  --contact-btn: black;
+  --contact-btn-text: white;
 
 }
 
@@ -49,6 +51,8 @@ body.night-mode {
   --filter1: invert(100%) brightness(1000%);
   --project-description: white;
   --dots-color: white;
+  --contact-btn: white;
+  --contact-btn-text: black;
 }
 
 .separator {
