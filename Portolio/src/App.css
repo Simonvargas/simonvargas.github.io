@@ -69,7 +69,7 @@ body.night-mode {
   --border-color: 8px solid white;
 }
 
-
+/* 
 @keyframes float {
   0% {
     transform: translateY(0) translateX(0);
@@ -86,10 +86,10 @@ body.night-mode {
 
 .dot {
   position: absolute;
-  width: 10px; /* Size of the dot */
+  width: 10px; 
   height: 10px;
-  background-color: var(--dots-color); /* Dot color */
-  border-radius: 50%; /* Make it circular */
+  background-color: var(--dots-color); 
+  border-radius: 50%;
   opacity: 0;
   animation: float 8s infinite;
 }
@@ -101,7 +101,7 @@ body.night-mode {
   100% {
     transform: translateX(-100px) translateY(-100px);
   }
-}
+} */
 
 @media (max-width: 768px) {
   body {

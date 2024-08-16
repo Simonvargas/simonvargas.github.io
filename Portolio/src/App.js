@@ -11,7 +11,7 @@ import NavBar from "./Components/Header/NavBar.js";
 import { ScrollProvider } from "./Context/Context.js";
 import New from "./Components/Projects/new.js";
 import { NightModeProvider } from "./Context/NightMode.js";
-import FloatingDots from './Components/Splash/dots.js';
+// import FloatingDots from './Components/Splash/dots.js';
 import "./App.css";
 
 
