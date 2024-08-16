@@ -10,31 +10,31 @@ const New = () => {
     const projects = [
         {
           title: 'Chimera',
-          description: 'Crowdfunding Platform',
+          description: 'A crowdfunding platform where users can donate to a cause or organization of their liking.',
           image: `${process.env.PUBLIC_URL}/images/chimera1.png`, 
           githubUrl: 'https://github.com/simonvargas/chimera',
         },
         {
           title: 'HeirBnB',
-          description:'Travel Lodging Platform',
+          description:'A travel lodging platform connecting hosts and guests for unique stays.',
           image:  `${process.env.PUBLIC_URL}/images/heirbnb1.png`,
           githubUrl: 'https://github.com/simonvargas/HeirBnB',
         },
         {
             title: 'Sneax',
-            description: 'Investment Trading Platform',
+            description: 'An investment trading platform for buying and selling shares.',
             image: `${process.env.PUBLIC_URL}/images/sneax1.png`, 
             githubUrl: 'https://github.com/simonvargas/Sneax',
           },
           {
             title: 'FeelBrite',
-            description: 'Enrollment and Scheduling Platform',
+            description: 'An enrollment and scheduling platform for managing class sign-ups.',
             image:  `${process.env.PUBLIC_URL}/images/feelbrite1.png`,
             githubUrl: 'https://github.com/simonvargas/FeelBrite',
           },
           {
             title: 'FiveCents',
-            description: 'Business Review Platform',
+            description: 'A business review Platform where users can review and rate businesses.',
             image:  `${process.env.PUBLIC_URL}/images/FiveCent.png`,
             githubUrl: 'https://github.com/simonvargas/FiveCents',
           },

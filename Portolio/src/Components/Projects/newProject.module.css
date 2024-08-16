@@ -61,9 +61,14 @@
     padding: 15px;
     background-color: var(--card-background);
     color: var(--card-color);
-    height: 5.3rem;
+    height: 6.2rem;
     font-weight: bold;
     
+  }
+
+  .projectDescription {
+    color: gray;
+    font-weight: bold;
   }
   
   .projectTitle {
