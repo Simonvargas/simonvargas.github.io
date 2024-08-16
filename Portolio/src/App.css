@@ -31,6 +31,7 @@ body.night-mode .splitSection {
   --dots-color: black;
   --contact-btn: black;
   --contact-btn-text: white;
+  --filter-sunMoon: invert(45%) sepia(100%) saturate(500%) hue-rotate(180deg);
 
 }
 
@@ -53,6 +54,7 @@ body.night-mode {
   --dots-color: white;
   --contact-btn: white;
   --contact-btn-text: black;
+  --filter-sunMoon: invert(1) sepia(1) saturate(10000%) hue-rotate(0deg) contrast(1);
 }
 
 .separator {

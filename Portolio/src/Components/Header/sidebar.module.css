@@ -103,7 +103,12 @@
  
 
   .icon1:hover {
-    filter: invert(45%) sepia(100%) saturate(500%) hue-rotate(180deg);
+    /* filter: invert(45%) sepia(100%) saturate(500%) hue-rotate(180deg); */
+    /* filter: invert(1) sepia(1) saturate(10000%) hue-rotate(60deg) brightness(1.5); green */
+    /* filter: invert(1) sepia(1) saturate(10000%) hue-rotate(0deg) contrast(1.2); yellow  */
+    filter: var(--filter-sunMoon);
+
+
   }
 
   .resumeDiv {
