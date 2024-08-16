@@ -60,7 +60,7 @@ color: var(--text-color);
     flex-direction: column; 
     height: 100%; 
     width: 100%; 
-    padding: 0;
+    padding: 1rem 1rem 2rem 1rem;
     overflow: none;
   }
   
@@ -72,8 +72,8 @@ color: var(--text-color);
     justify-content: center; /* Horizontally center content */
     flex-grow: 1; /* Allow .inner to grow and fill available space */
     padding: 0;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    /* margin-top: 1rem; */
+    /* margin-bottom: 2rem; */
   }
 
   /* .badges {

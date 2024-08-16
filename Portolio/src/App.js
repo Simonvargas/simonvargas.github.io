@@ -28,7 +28,7 @@ function App() {
       <div className="separator"></div>
       <Introduction />
       <div className="separator"></div>
-      <Projects />
+      {/* <Projects /> */}
       <New />
       <div className="separator"></div>
       <Technologies />
