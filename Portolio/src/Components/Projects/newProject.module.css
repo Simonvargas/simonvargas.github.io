@@ -122,6 +122,7 @@
   }
   
   .icon:hover {
+    filter: none;
     fill: #92dfab; /* Change color on hover */
   }
   
