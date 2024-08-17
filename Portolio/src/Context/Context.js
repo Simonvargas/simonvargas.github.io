@@ -6,7 +6,6 @@ const ScrollProvider = ({ children }) => {
   const homeRef = useRef(null);
   const aboutMeRef = useRef(null);
   const projectsRef = useRef(null);
-  const projectsRefMobile = useRef(null);
   const technologiesRef = useRef(null);
   const contactRef = useRef(null);
   const [activeLink, setActiveLink] = useState('home');
@@ -17,7 +16,6 @@ const ScrollProvider = ({ children }) => {
         { ref: homeRef, id: 'home' },
         { ref: aboutMeRef, id: 'aboutMe' },
         { ref: projectsRef, id: 'projects' },
-        { ref: projectsRefMobile, id: 'projectsMobile' },
         { ref: technologiesRef, id: 'technologies' },
         { ref: contactRef, id: 'contact' }
       ];
@@ -44,7 +42,7 @@ const ScrollProvider = ({ children }) => {
   }, []);
 
   return (
-    <ScrollContext.Provider value={{ homeRef, aboutMeRef, projectsRef, projectsRefMobile, technologiesRef, contactRef, activeLink, setActiveLink }}>
+    <ScrollContext.Provider value={{ homeRef, aboutMeRef, projectsRef, technologiesRef, contactRef, activeLink, setActiveLink }}>
       {children}
     </ScrollContext.Provider>
   );

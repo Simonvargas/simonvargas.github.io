@@ -1,21 +1,21 @@
-import React, { useState, useEffect, useContext, useRef } from "react";
+import React, { useContext} from "react";
 import { ScrollContext } from "../../Context/Context";
 import styles from "./Introduction.module.css";
-import {motion, useInView, useAnimation, useIsPresent } from "framer-motion"
+// import {motion, useInView, useAnimation, useIsPresent } from "framer-motion"
 
 
 function Introduction() {
   const { aboutMeRef } = useContext(ScrollContext);
 
-  const ref = useRef(null)
-  const isInView = useInView(ref, { threshold: 0.25, triggerOnce: true });
-  const mainControls = useAnimation()
+  // const ref = useRef(null)
+  // const isInView = useInView(ref, { threshold: 0.25, triggerOnce: true });
+  // const mainControls = useAnimation()
 
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start('visible')
-    }
-  }, [isInView])
+  // useEffect(() => {
+  //   if (isInView) {
+  //     mainControls.start('visible')
+  //   }
+  // }, [isInView])
 
 
   return (
@@ -30,9 +30,6 @@ function Introduction() {
       animate={mainControls}
       transition={{duration: 0.3, delay: .4}}
       > */}
-      <div ref={ref}>
-    
-          
         <h2>Welcome to my Portfolio!</h2>
         <p>
           From a young age, computers have been an intrinsic part of my life.
@@ -54,7 +51,6 @@ function Introduction() {
           I'm thrilled to have you here, and I can't wait to share my work with
           you. Let's embark on this journey together!
         </p>
-        </div>
         {/* </motion.div> */}
     </section>
   );

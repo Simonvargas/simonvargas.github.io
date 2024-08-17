@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useState, useContext } from "react";
 import "./Header.css";
 import { ScrollContext } from "../../Context/Context";
 import { NightModeContext} from "../../Context/NightMode";
@@ -9,7 +9,6 @@ function Header() {
     homeRef,
     aboutMeRef,
     projectsRef,
-    projectsRefMobile,
     technologiesRef,
     contactRef,
     activeLink,

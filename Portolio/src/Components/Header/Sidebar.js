@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useContext } from "react";
 import styles from "./sidebar.module.css";
 import { ScrollContext } from "../../Context/Context";
 import { motion } from 'framer-motion';
@@ -16,53 +16,11 @@ function Sidebar() {
         setActiveLink,
       } = useContext(ScrollContext);
     
-      const [navOpen, setNavOpen] = useState(false);
-      const [isClosing, setIsClosing] = useState(false);
-    
       const scrollToSection = (ref, section) => {
         setActiveLink(section);
-        if (navOpen) {
-          scrollToSection1(ref, section);
-        } else {
-          scrollToSection2(ref, section);
-        }
+        ref.current.scrollIntoView({ behavior: "smooth" })
       };
     
-      // Function for smooth scrolling when nav is open
-      const scrollToSection1 = (ref, section) => {
-        ref.current.scrollIntoView({ behavior: "smooth" });
-        closeNav();
-      };
-    
-      // Function for smooth scrolling when nav is closed
-      const scrollToSection2 = (ref, section) => {
-        ref.current.scrollIntoView({ behavior: "smooth" });
-      };
-     
-    
-      const openNav = () => {
-        document.body.classList.add('nav-open');
-        setNavOpen(true);
-        setIsClosing(false);
-      };
-    
-      const closeNav = () => {
-        setIsClosing(true);
-        setTimeout(() => {
-          document.body.classList.remove('nav-open');
-          setNavOpen(false);
-          setIsClosing(false);
-        }, 300); 
-      };
-    
-      const toggleNav = () => {
-        if (navOpen) {
-          closeNav();
-        } else {
-          openNav();
-        }
-      };
-
 
       const itemVariants = {
         hidden: { opacity: 0, y: 20 },

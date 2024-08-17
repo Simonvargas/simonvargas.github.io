@@ -2,7 +2,6 @@ import React from "react";
 import Splash from './Components/Splash/Splash.js'
 import Header from './Components/Header/Header.js'
 import Introduction from "./Components/Introduction/Introduction.js";
-import Projects from "./Components/Projects/Projects.js";
 import Contact from "./Components/Contact/Contact.js";
 import Footer from "./Components/Footer/Footer.js";
 import Technologies from "./Components/Technologies/Technologies.js";
@@ -28,7 +27,6 @@ function App() {
       <div className="separator"></div>
       <Introduction />
       <div className="separator"></div>
-      {/* <Projects /> */}
       <New />
       <div className="separator"></div>
       <Technologies />

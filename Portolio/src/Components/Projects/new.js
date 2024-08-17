@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useContext, useRef } from "react";
+import React, {  useEffect, useContext} from "react";
 import { ScrollContext } from "../../Context/Context";
 import styles from "./newProject.module.css";
-import {motion, useInView, useAnimation, useIsPresent } from "framer-motion"
+// import {motion, useInView, useAnimation, useIsPresent } from "framer-motion"
 
 
 const New = () => {
@@ -39,15 +39,15 @@ const New = () => {
             githubUrl: 'https://github.com/simonvargas/FiveCents',
           },
       ];
-      const ref = useRef(null)
-      const isInView = useInView(ref, { threshold: 0.25, triggerOnce: true });
-      const mainControls = useAnimation()
+      // const ref = useRef(null)
+      // const isInView = useInView(ref, { threshold: 0.25, triggerOnce: true });
+      // const mainControls = useAnimation()
     
-      useEffect(() => {
-        if (isInView) {
-          mainControls.start('visible')
-        }
-      }, [isInView])
+      // useEffect(() => {
+      //   if (isInView) {
+      //     mainControls.start('visible')
+      //   }
+      // }, [isInView])
     
       const preloadImage = (src) => {
         const img = new Image();
@@ -58,7 +58,7 @@ const New = () => {
         projects.forEach(project => {
             preloadImage(project.image);
         });
-    }, []);
+    }, );
     
   return (
     <div ref={projectsRef} id="projects" className={styles.projectsSection}>
@@ -71,7 +71,7 @@ const New = () => {
       animate={mainControls}
       transition={{duration: 0.3, delay: .5}}
       > */}
-      <div ref={ref}>
+      {/* <div ref={ref}> */}
     <h2 className={styles.sectionTitle}>My Projects</h2>
     <div className={styles.grid}>
       {projects.map((project, index) => (
@@ -93,7 +93,7 @@ const New = () => {
             </div>
         </div>
       ))}
-    </div>
+    {/* </div> */}
     </div>
     {/* </motion.div> */}
   </div>

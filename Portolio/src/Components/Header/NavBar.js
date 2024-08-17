@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useContext } from "react";
 import styles from "./sidebar.module.css";
 import { NightModeContext} from "../../Context/NightMode";
 import { motion } from 'framer-motion';
@@ -86,7 +86,7 @@ function NavBar() {
       </div>
       <div className={styles.resumeDiv}>
       <button className={styles.btn} onClick={toggleNightMode}>
-        {isNightMode ? <img className={styles.icon1} src='https://www.reshot.com/preview-assets/icons/GMT2U6WQE5/sun-GMT2U6WQE5.svg'></img> : <img className={styles.icon1} src='https://www.reshot.com/preview-assets/icons/SD4ENBAV8K/moon-crescent-SD4ENBAV8K.svg'></img>}
+        {isNightMode ? <img  alt='moon icon' className={styles.icon1} src='https://www.reshot.com/preview-assets/icons/GMT2U6WQE5/sun-GMT2U6WQE5.svg'></img> : <img alt='sun icon'className={styles.icon1} src='https://www.reshot.com/preview-assets/icons/SD4ENBAV8K/moon-crescent-SD4ENBAV8K.svg'></img>}
       </button>
         <a
           target="_blank"
