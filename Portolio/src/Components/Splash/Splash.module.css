@@ -13,11 +13,6 @@
   
 }
 
-body.night-mode .splitSection {
-  background-color: black;
- 
-}
-
 
 
 .splitSectionText {
@@ -143,6 +138,11 @@ display: none;
 
 .arrow3 {
   display:none;
+}
+
+.headingBtn {
+  background-color: var(--contact-btn);
+  color: var(--contact-btn-text);
 }
 
 
