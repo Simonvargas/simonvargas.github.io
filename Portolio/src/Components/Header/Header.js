@@ -98,7 +98,7 @@ function Header() {
           About Me
         </a>
         <a
-          className={`links ${activeLink === "projectsMobile" ? "active" : ""}`}
+          className={`links ${activeLink === "projects" ? "active" : ""}`}
           onClick={() => scrollToSection(projectsRef, "projects")}
         >
           Projects
