@@ -18,9 +18,6 @@ function Contact() {
       <h3>Email</h3>
       <p>simonvargas01@gmail.com</p>
 
-      <h3>Phone</h3>
-      <span>786.985.5045</span>
-
       <h3>Location</h3>
       <p>New York, NY</p>
 
